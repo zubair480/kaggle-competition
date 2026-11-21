@@ -1,8 +1,5 @@
-# The scorer runs the hidden tasks one after another inside a hard 12-hour limit.
-# The tool-call cap is what bounds a typical task; the time cap only stops outliers.
-# 40 calls / 8 minutes is the budget used by public submissions that completed and scored.
 evaluation:
-  timeout_seconds: 120
-  max_tool_calls: 40
-  max_time_minutes: 8
-  max_turns: 80
+  timeout_seconds: 90
+  max_tool_calls: 30
+  max_time_minutes: 5
+  max_turns: 60
