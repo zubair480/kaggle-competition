@@ -1,0 +1,5 @@
+evaluation:
+  timeout_seconds: {CFG['timeout_seconds']}
+  max_tool_calls: {CFG['max_tool_calls']}
+  max_time_minutes: {CFG['max_time_minutes']}
+  max_turns: {CFG['max_turns']}

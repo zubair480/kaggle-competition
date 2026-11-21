@@ -1,0 +1,6 @@
+temperature: {CFG['temperature']}
+top_p: {CFG['top_p']}
+max_output_tokens: {CFG['max_output_tokens']}
+thinking_config:
+  thinking_budget: {CFG['thinking_budget']}
+  include_thoughts: true

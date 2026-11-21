@@ -1,0 +1,6 @@
+name: localization_panel
+agent_class: SequentialAgent
+sub_agents:
+  - config_path: sub_agents/parallel.yaml
+  - config_path: sub_agents/reconcile.yaml
+description: Two independent read-only source reviewers followed by evidence reconciliation. Supply the full issue and concrete source paths and search excerpts.

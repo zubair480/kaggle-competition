@@ -1,0 +1,5 @@
+agent_class: SequentialAgent
+name: analysis_stage
+description: Analyze within the parent Runner and store the plan before the root editor continues.
+sub_agents:
+  - config_path: sub_agents/code_analyzer.yaml

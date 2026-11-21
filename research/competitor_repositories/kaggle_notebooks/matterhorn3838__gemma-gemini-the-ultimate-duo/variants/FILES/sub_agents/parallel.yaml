@@ -1,0 +1,5 @@
+name: independent_readers
+agent_class: ParallelAgent
+sub_agents:
+  - config_path: sub_agents/symbol.yaml
+  - config_path: sub_agents/contract.yaml

@@ -1,0 +1,6 @@
+# eval_config.yaml
+evaluation:
+  timeout_seconds: 150
+  max_time_minutes: {MAX_MINUTES}
+  max_tool_calls: {MAX_TOOL_CALLS}
+  max_turns: 70

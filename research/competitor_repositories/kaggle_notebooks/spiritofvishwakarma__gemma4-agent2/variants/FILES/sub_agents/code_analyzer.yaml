@@ -1,0 +1,16 @@
+name: code_analyzer
+model: gemma-4-31b-it-qat-w4a16-ct
+description: Read-only locator. Pass exact symbol names, messages and behaviours from the issue. Returns file paths, line ranges and a short note.
+instruction: {json.dumps(ANALYZER_PROMPT)}
+tools:
+  - run_command
+  - read_file
+  - get_code_subgraph
+generate_content_config:
+  temperature: 0.9
+  top_p: 0.95
+  top_k: 64
+  max_output_tokens: 8192
+  thinking_config:
+    thinking_budget: 4096
+    include_thoughts: true

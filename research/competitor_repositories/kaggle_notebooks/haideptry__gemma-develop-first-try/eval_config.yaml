@@ -1,0 +1,7 @@
+# Participant evaluation configuration for Stage 1 inference
+# Enforces strict 5-minute per-task caps to guarantee the 120-task run completes under 10 hours (< 12-hour Kaggle limit)
+evaluation:
+  timeout_seconds: 60
+  max_tool_calls: 15
+  max_time_minutes: 5
+  max_turns: 25

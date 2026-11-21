@@ -1,0 +1,12 @@
+name: contract_reviewer
+agent_class: LlmAgent
+model: gemma-4-31b-it-qat-w4a16-ct
+instruction: !include ../prompts/contract.md
+generate_content_config: !include ../configs/review.yaml
+output_key: contract_report
+tools:
+  - read_file
+  - get_code_neighbors
+  - get_code_subgraph
+  - search_similar_code
+  - get_status

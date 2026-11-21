@@ -1,0 +1,7 @@
+# yiyu v2: roman012 analyzer back (own 2048-token output cap + read budget) + submit once + no-loop rule + scratch rule; 8 Kaggle min/task.
+# max_turns 120 (all agents' LLM calls) stops post-submit spinning; resolved tasks needed <=101.
+evaluation:
+  timeout_seconds: 300
+  max_tool_calls: 100
+  max_time_minutes: 7.5
+  max_turns: 120
