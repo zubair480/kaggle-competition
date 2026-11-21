@@ -13,7 +13,7 @@
 
 ## Evidence and comments
 
-E4B, 3.5 min / 30 calls, temperature 1.0, thinking 2048. No score shown.
+E4B (small-model track), 3.5 min / 30 calls, temperature 1.0, thinking 2048. No score statement in the notebook text; see badge.
 
 ## Files
 

@@ -13,7 +13,7 @@
 
 ## Evidence and comments
 
-E4B variant of the Hong prompt with six tools. No score shown.
+E4B (small-model track) variant of the Hong prompt with six tools. No score statement in the notebook text; see badge.
 
 ## Files
 

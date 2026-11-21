@@ -13,7 +13,7 @@
 
 ## Evidence and comments
 
-E4B small-model variant of the flexonafft v2 bundle. No score shown.
+E4B small-model variant of the flexonafft v2 bundle. No score statement in the notebook text.
 
 ## Files
 
