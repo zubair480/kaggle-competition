@@ -1,0 +1,6 @@
+{"instance_id": "rich_3278", "repo": "Textualize/rich", "resolved": true, "exit_code": 0, "patch_chars": 318, "tool_calls": 22, "duration": 277.0}
+{"instance_id": "rich_4077", "repo": "Textualize/rich", "resolved": true, "exit_code": 0, "patch_chars": 352, "tool_calls": 15, "duration": 147.7}
+{"instance_id": "fastapi_14492", "repo": "fastapi/fastapi", "resolved": true, "exit_code": 0, "patch_chars": 388, "tool_calls": 12, "duration": 65.4}
+{"instance_id": "requests_6589", "repo": "psf/requests", "resolved": false, "exit_code": 1, "patch_chars": 438, "tool_calls": 39, "duration": 354.5}
+{"instance_id": "fastapi_14786", "repo": "fastapi/fastapi", "resolved": true, "exit_code": 0, "patch_chars": 403, "tool_calls": 4, "duration": 34.2}
+{"instance_id": "requests_7205", "repo": "psf/requests", "resolved": false, "exit_code": 1, "patch_chars": 502, "tool_calls": 12, "duration": 121.3}
