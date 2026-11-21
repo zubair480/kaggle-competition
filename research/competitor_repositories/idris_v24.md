@@ -36,3 +36,26 @@ time limit and got no score.
 2. Temperature 1.0 with top_k 64 is the one setting we have not tried. Evidence is a single draw.
 3. 40 calls at 8 minutes cost them two submissions to the time limit. Our 5-minute cap avoids that.
 4. Empty patches are a shared weakness (about a quarter of runs), not something specific to our agent.
+
+## What predicts success in their run data (mined 2026-11-21)
+
+From `runs.jsonl`: 1,104 task runs of their single-agent versions, 475 resolved. Step-level fields exist for
+about 200 of those runs. These are correlations: harder tasks take longer for any agent.
+
+| Signal | Resolved |
+|---|---|
+| First source edit at 60-120 s | 36 / 56 (64%) |
+| First source edit at 120-300 s | 18 / 61 (30%) |
+| First source edit after 300 s | 1 / 11 (9%) |
+| 2-3 searches | 28 / 49 (57%) |
+| 7 or more searches | 20 / 84 (24%) |
+| 7 or more file reads | 34 / 121 (28%) |
+| Exactly one pytest call | 22 / 35 (63%) |
+| No history compaction | 436 / 970 (45%) |
+| Two compactions | 5 / 35 (14%) |
+| Run finished in under 120 s | 40 / 52 (77%) |
+| Run lasted 480 s or more | 93 / 362 (26%) |
+| Ended with an empty patch | 100 of 1,104 runs (9%), none resolved |
+
+Reading: a run that has not edited by about two minutes, or that searches and reads more than a handful of
+times, or that reaches a second compaction, rarely resolves. Time past five minutes adds little.
