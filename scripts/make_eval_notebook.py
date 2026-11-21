@@ -62,10 +62,12 @@ record = '''
     try:  # compact per-task event digest in the notebook log (output files are not always retrievable)
         import re as _re
         _lg = (WORKING_DIR / 'results' / 'logs' / f'{task.instance_id}.log').read_text(errors='replace')
-        _lg = _re.sub(r'\\x1b\\[[0-9;]*m', '', _lg)
+        _lg = _re.sub(r'\\x1b\\[[0-9;?]*[A-Za-z]', '', _lg)
         print('TRACE_BEGIN', task.instance_id)
-        for _l in _lg.splitlines()[2:]:
-            if _l.startswith('  ['): print(_l[:230])
+        _keep = [_l for _l in _lg.splitlines() if _re.search(r'\\[\\s*[0-9.]+s\\]', _l[:16])]
+        for _l in (_keep or _lg.splitlines())[:160]:
+            if 'System Prompt' in _l or 'Task Prompt' in _l: continue
+            print('T|', _l[:230])
         print('TRACE_END', task.instance_id)
         print('PATCH_BEGIN', task.instance_id); print(patch[:3000]); print('PATCH_END', task.instance_id)
     except Exception as _e:

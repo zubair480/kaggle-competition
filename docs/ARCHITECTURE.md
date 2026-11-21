@@ -17,7 +17,7 @@ submission/
 | Option | Decision | Evidence |
 |---|---|---|
 | Single 31B agent | **Used** | Every public configuration with a leaderboard badge of 0.20 or more is this shape (`research/competitor_repositories/`). |
-| Sub-agents (planner, coder, reviewer) | Not used | Each hand-off costs calls and context inside a 32k window with a 5-8 minute cap. No public result shows a gain; the public multi-agent bundles sit at or below the single-agent family. |
+| Sub-agents (planner, coder, reviewer) | Not used | Each hand-off costs calls and context inside a 32k window with a 5-minute cap. No public result shows a gain; the public multi-agent bundles sit at or below the single-agent family. |
 | Smaller base model (12B, E4B, E2B) | Not used for the main entry | Reported E4B scores are about 0.05-0.06; reported 12B runs exceeded the 12-hour limit (`research/kaggle_discussion_findings.md`). |
 | LoRA adapter | Not used | No GPU training budget in this project and no public evidence of a gain. Untested, not disproven. |
 | Code-graph tools | Not declared | Measured weakest localization strategy, 15% empty results (`docs/RETRIEVAL_RESEARCH.md`). Not declaring them also removes their section from the harness's task prompt. |
@@ -26,7 +26,7 @@ submission/
 ## The four constraints the prompt is built around
 
 1. **Time is the binding constraint, not intelligence.** About 120 tasks run one after another inside 12 hours.
-   The prompt therefore sets call-number deadlines (edit by call 12, no new exploration after call 20) instead
+   The prompt therefore sets call-number deadlines (edit by call 8, no new exploration after call 15) instead
    of an open-ended "investigate thoroughly".
 2. **The working tree is graded even without `submit_patch`.** So an early concrete edit dominates a late
    perfect one. The prompt says so explicitly.
@@ -52,7 +52,8 @@ turning thinking off or hiding thought summaries lowers scores; this project did
 
 ## Budgets
 
-See `docs/FINAL_REPORT.md` for the final values and the measured timings they are based on.
+30 tool calls, 5 minutes, 90 s per command, 60 turns per task. Worst case for 120 tasks is about 11.3 hours
+(every task at the cap plus overhead); the measured mean projects to about 8.2 hours. See `docs/FINAL_REPORT.md`.
 
 ## What is deliberately absent
 
