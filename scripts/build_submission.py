@@ -59,7 +59,7 @@ def main():
     assert 0 <= g["thinking_config"]["thinking_budget"] <= 32768
     ev = load(ROOT / "eval_config.yaml")["evaluation"]
     assert set(ev) <= {"timeout_seconds", "max_tool_calls", "max_time_minutes", "max_turns"}
-    assert ev["max_time_minutes"] <= 5, "12h total limit: keep the per-task cap at 5 min or less"
+    assert ev["max_time_minutes"] <= 8 and ev["max_tool_calls"] <= 40, "12h total limit: stay within the 8 min / 40 call budget known to finish"
     out = Path(sys.argv[1] if len(sys.argv) > 1 else "submission.zip")
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         for p in sorted(files):

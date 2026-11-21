@@ -1,0 +1,148 @@
+{
+ "n_tasks": 129,
+ "repos": {
+  "fastapi/fastapi": 67,
+  "Textualize/rich": 48,
+  "psf/requests": 13,
+  "encode/httpx": 1
+ },
+ "task_type": {
+  "bugfix": 57,
+  "other": 37,
+  "feature": 31,
+  "refactor/maintenance": 4
+ },
+ "difficulty_heuristic": {
+  "easy": 68,
+  "medium": 38,
+  "hard": 23
+ },
+ "keyword_categories": {
+  "http_behavior": 46,
+  "typing_annotations": 42,
+  "terminal_rendering": 36,
+  "tooling_ci": 34,
+  "compat_deprecation": 32,
+  "validation_errors": 25,
+  "docs_examples": 24,
+  "serialization_encoding": 19,
+  "async_concurrency": 16,
+  "dependency_injection": 13,
+  "openapi_schema": 12,
+  "performance": 11
+ },
+ "per_repo_categories": {
+  "fastapi/fastapi": {
+   "http_behavior": 29,
+   "compat_deprecation": 26,
+   "typing_annotations": 22,
+   "docs_examples": 18,
+   "validation_errors": 17,
+   "tooling_ci": 16,
+   "async_concurrency": 14,
+   "serialization_encoding": 13,
+   "dependency_injection": 13,
+   "openapi_schema": 12,
+   "terminal_rendering": 10,
+   "performance": 6
+  },
+  "psf/requests": {
+   "http_behavior": 12,
+   "serialization_encoding": 5,
+   "typing_annotations": 3,
+   "terminal_rendering": 3,
+   "tooling_ci": 2,
+   "validation_errors": 2,
+   "async_concurrency": 1,
+   "compat_deprecation": 1
+  },
+  "Textualize/rich": {
+   "terminal_rendering": 23,
+   "typing_annotations": 17,
+   "tooling_ci": 16,
+   "docs_examples": 6,
+   "compat_deprecation": 5,
+   "performance": 5,
+   "validation_errors": 5,
+   "http_behavior": 4,
+   "serialization_encoding": 1
+  },
+  "encode/httpx": {
+   "validation_errors": 1,
+   "http_behavior": 1,
+   "async_concurrency": 1
+  }
+ },
+ "gold_files": {
+  "median": 1,
+  "p75": 2,
+  "p90": 4,
+  "max": 26
+ },
+ "gold_changed_lines": {
+  "median": 12,
+  "p75": 44,
+  "p90": 128,
+  "max": 12714
+ },
+ "issue_chars": {
+  "median": 418,
+  "p75": 1000,
+  "p90": 1891,
+  "max": 10095
+ },
+ "test_added_lines": {
+  "median": 28,
+  "p75": 90,
+  "p90": 207,
+  "max": 970
+ },
+ "pct": {
+  "single_file": 0.7054263565891473,
+  "creates_new_file": 0.08527131782945736,
+  "cross_module": 0.17829457364341086,
+  "has_hints": 0.0,
+  "gold_file_named_in_issue": 0.07751937984496124,
+  "gold_symbol_named_in_issue": 0.23255813953488372,
+  "is_pr_description": 0.24806201550387597,
+  "touches_non_src_only": 0.031007751937984496
+ },
+ "created_at": {
+  "min": "2023-07-29",
+  "max": "2026-06-20"
+ },
+ "by_repo": {
+  "fastapi/fastapi": {
+   "n": 67,
+   "median_changed": 18,
+   "median_files": 1,
+   "easy": 31,
+   "medium": 19,
+   "hard": 17
+  },
+  "Textualize/rich": {
+   "n": 48,
+   "median_changed": 9.0,
+   "median_files": 1.0,
+   "easy": 26,
+   "medium": 17,
+   "hard": 5
+  },
+  "psf/requests": {
+   "n": 13,
+   "median_changed": 4,
+   "median_files": 1,
+   "easy": 11,
+   "medium": 2,
+   "hard": 0
+  },
+  "encode/httpx": {
+   "n": 1,
+   "median_changed": 79,
+   "median_files": 7,
+   "easy": 0,
+   "medium": 0,
+   "hard": 1
+  }
+ }
+}

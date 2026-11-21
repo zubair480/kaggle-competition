@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-30",
+  "evidence_note": "Scores were observed in the owner's Kaggle submissions screenshot. No hidden per-task outcomes are available. Local assertions are not solve rates.",
+  "releases": [
+    {
+      "id": "v1",
+      "status": "submitted",
+      "public_score": 0.06,
+      "label": "Coder + analyzer",
+      "hypothesis": "Structured repair workflow",
+      "outcome": "Valid submission; public score 0.06."
+    },
+    {
+      "id": "v2",
+      "status": "submitted",
+      "public_score": 0.06,
+      "label": "Search first, optional analyzer",
+      "hypothesis": "Bound investigation and preserve test exit codes",
+      "outcome": "Same aggregate score; solved-task overlap is unknown."
+    },
+    {
+      "id": "v2_reviewed",
+      "status": "unsubmitted",
+      "public_score": null,
+      "label": "Reviewed workflow",
+      "hypothesis": "Scratch tooling and runtime provenance",
+      "outcome": "Packaging/compiler validated; no measured solve result."
+    },
+    {
+      "id": "pilot_A",
+      "status": "unsubmitted",
+      "public_score": null,
+      "label": "Thinking off",
+      "hypothesis": "Control arm using reviewed source",
+      "outcome": "Original pilot: verification patch failed to apply; no grade. Later CPU replay: both saved patch and source-only patch passed 220 tests. The original failure did not reproduce and remains unexplained."
+    },
+    {
+      "id": "pilot_B",
+      "status": "unsubmitted",
+      "public_score": null,
+      "label": "Thinking on",
+      "hypothesis": "Change only include_thoughts",
+      "outcome": "Edited source, then damaged tests and repeated one read 25 times. Context overflow ended the run before patch extraction or grading. This does not establish an inherent thinking/output incompatibility."
+    }
+  ],
+  "validation": {
+    "private_offline_assertions": 82,
+    "private_failures": 0,
+    "official_compile": "Both pilot candidates passed locally",
+    "real_pilot_runs": 2,
+    "gpu_dispatch": "pilot v1 executed 2026-09-27/28 on four L4 devices (tp=4)",
+    "real_pilot_runs_graded": 0,
+    "real_pilot_runs_planned": 4
+  },
+  "limitations": [
+    "Public score is not a private leaderboard forecast",
+    "Synthetic tests do not establish model quality",
+    "Subprocess evaluation differs from Docker grading",
+    "Two tasks cannot establish a generally superior candidate",
+    "An admission deadline is not a hard process kill",
+    "Pilot v1 graded zero of four planned runs, so it ranks no candidate",
+    "Accelerator metadata states the request; only runtime device counts confirm allocation",
+    "A single quota reading shows headroom, not what a given run was charged",
+    "A saved patch passing replay tests is not a new agent solve measurement",
+    "Cumulative prompt usage is not the size of a single context window"
+  ],
+  "submission_updates": [
+    {
+      "id": "v3",
+      "reference": "56636116",
+      "status_at_report": "SUCCEEDED",
+      "reported_on": "2026-09-30",
+      "public_score": 0.06,
+      "sha256": "b8da59c1c3a0671bb9b11b2fe4238a252ff792a63abf7ea4b5d555ceab57b24b",
+      "source": "Owner-provided submissions screenshot; no hidden per-task outcomes available"
+    }
+  ],
+  "comparison_v2": {
+    "planned": 8,
+    "executed": 2,
+    "graded": 0,
+    "controls_accepted": 8,
+    "winner": null,
+    "report": "COMPARISON_V2.md",
+    "candidate_A": "submitted v3",
+    "candidate_B": "shorter prompt; thinking off"
+  }
+}
