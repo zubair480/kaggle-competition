@@ -59,6 +59,17 @@ record = '''
         _f.write(_json.dumps(_rec) + '\\n')
     (WORKING_DIR / 'patches').mkdir(exist_ok=True)
     (WORKING_DIR / 'patches' / f'{task.instance_id}.patch').write_text(patch)
+    try:  # compact per-task event digest in the notebook log (output files are not always retrievable)
+        import re as _re
+        _lg = (WORKING_DIR / 'results' / 'logs' / f'{task.instance_id}.log').read_text(errors='replace')
+        _lg = _re.sub(r'\\x1b\\[[0-9;]*m', '', _lg)
+        print('TRACE_BEGIN', task.instance_id)
+        for _l in _lg.splitlines()[2:]:
+            if _l.startswith('  ['): print(_l[:230])
+        print('TRACE_END', task.instance_id)
+        print('PATCH_BEGIN', task.instance_id); print(patch[:3000]); print('PATCH_END', task.instance_id)
+    except Exception as _e:
+        print('trace digest failed:', _e)
     if _time.time() - _t_run > MAX_HOURS * 3600:
         print('time budget for this dev run reached; stopping early'); break
 '''
