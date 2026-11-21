@@ -1,0 +1,7 @@
+# The scorer runs ~120 tasks sequentially inside a hard 12-hour limit, and each
+# task adds ~0.5 min of setup on top of this cap: 120 x 5.5 min = 11 h.
+evaluation:
+  timeout_seconds: 60
+  max_tool_calls: 40
+  max_time_minutes: 5
+  max_turns: 60
