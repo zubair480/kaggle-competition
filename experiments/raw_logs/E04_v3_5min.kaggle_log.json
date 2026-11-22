@@ -1,0 +1,1455 @@
+[{"stream_name":"stderr","time":7.166409925,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.166454614,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.166458167,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.166460331,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.771031464,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.7710547210000005,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.771057455,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.771059701,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.236564279,"data":"Installing 41 wheels from /kaggle/input/datasets/metric/gemma-4-developer-agent-wheelhouse...\n"}
+,{"stream_name":"stdout","time":62.112101939,"data":"Wheelhouse installation complete.\n"}
+,{"stream_name":"stdout","time":94.252844673,"data":"Data directory: /kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":94.252871854,"data":"Agent directory: /kaggle/working/sample_submission (model=gemma-4-12b-it-qat-w4a16-ct)\n"}
+,{"stream_name":"stdout","time":94.252875206,"data":"Loaded 129 tasks from tasks.jsonl\n"}
+,{"stream_name":"stdout","time":94.252877814,"data":"  - fastapi_15661 (fastapi/fastapi @ ee22a4b8)\n"}
+,{"stream_name":"stdout","time":94.252880299,"data":"  - fastapi_15588 (fastapi/fastapi @ cb83b83d)\n"}
+,{"stream_name":"stdout","time":94.252882752,"data":"  - fastapi_15589 (fastapi/fastapi @ 22b02e26)\n"}
+,{"stream_name":"stdout","time":94.252885158,"data":"  - fastapi_15030 (fastapi/fastapi @ 48d58ae3)\n"}
+,{"stream_name":"stdout","time":94.25288768,"data":"  - fastapi_14962 (fastapi/fastapi @ 1e78a36b)\n"}
+,{"stream_name":"stdout","time":94.252890104,"data":"agent files: ['agent.yaml', 'configs/sampling.yaml', 'eval_config.yaml', 'prompts/system.md'] model: gemma-4-31b-it-qat-w4a16-ct\n"}
+,{"stream_name":"stdout","time":96.406235855,"data":"Graph for fastapi/fastapi (fastapi_15661):\n"}
+,{"stream_name":"stdout","time":96.406267847,"data":"  Nodes: 4263, Edges: 2430\n"}
+,{"stream_name":"stdout","time":96.406272522,"data":"\n"}
+,{"stream_name":"stdout","time":96.406276316,"data":"Neighbors of 'custom_request_and_route.tutorial002_py310.ValidationErrorLoggingRoute.get_route_handler' (showing up to 5):\n"}
+,{"stream_name":"stdout","time":96.406280693,"data":"  - fastapi/fastapi;custom_request_and_route.tutorial002_py310.ValidationErrorLoggingRoute\n"}
+,{"stream_name":"stdout","time":96.406284687,"data":"  - fastapi/fastapi;fastapi.exceptions.HTTPException\n"}
+,{"stream_name":"stdout","time":96.406288514,"data":"  - fastapi/fastapi;fastapi.exceptions.RequestValidationError\n"}
+,{"stream_name":"stdout","time":96.406292357,"data":"\n"}
+,{"stream_name":"stdout","time":96.406296085,"data":"Top similar nodes to 'custom_request_and_route.tutorial002_py310.ValidationErrorLoggingRoute.get_route_handler':\n"}
+,{"stream_name":"stdout","time":96.406300112,"data":"  - custom_request_and_route.tutorial002_an_py310.ValidationErrorLoggingRoute.get_route_handler (similarity=1.0000)\n"}
+,{"stream_name":"stdout","time":96.406304184,"data":"  - fastapi.routing.APIRouter.__init__ (similarity=0.9996)\n"}
+,{"stream_name":"stdout","time":96.406308042,"data":"  - fastapi.applications.FastAPI.setup (similarity=0.9993)\n"}
+,{"stream_name":"stdout","time":96.406323188,"data":"  - custom_request_and_route.tutorial002_an_py310.ValidationErrorLoggingRoute (similarity=0.9991)\n"}
+,{"stream_name":"stdout","time":96.406326598,"data":"  - custom_request_and_route.tutorial002_py310.ValidationErrorLoggingRoute (similarity=0.9991)\n"}
+,{"stream_name":"stdout","time":96.406329791,"data":"\n"}
+,{"stream_name":"stdout","time":96.406332557,"data":"Induced subgraph over 4 focal nodes: 4 nodes, 6 edges\n"}
+,{"stream_name":"stdout","time":467.564253687,"data":"vLLM server started on http://127.0.0.1:8000/v1 (tp=4)\n"}
+,{"stream_name":"stderr","time":467.72667327,"data":"/usr/local/lib/python3.12/dist-packages/google/adk/features/_feature_decorator.py:72: UserWarning: [EXPERIMENTAL] feature FeatureName.AGENT_CONFIG is enabled.\n"}
+,{"stream_name":"stderr","time":467.72669513,"data":"  check_feature_enabled()\n"}
+,{"stream_name":"stderr","time":467.726723408,"data":"/tmp/ipykernel_65/1475980464.py:80: UserWarning: [EXPERIMENTAL] EventsCompactionConfig: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.\n"}
+,{"stream_name":"stderr","time":467.726729432,"data":"  events_compaction_config=EventsCompactionConfig(\n"}
+,{"stream_name":"stderr","time":467.726733705,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox ac9c757e-f50, creating venv without pip: Command '['/tmp/swegemma_sandbox_ac9c757e-f50_ym8zn3zr/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":467.726738636,"data":"\n"}
+,{"stream_name":"stderr","time":467.726742594,"data":"/usr/local/lib/python3.12/dist-packages/google/adk/features/_feature_decorator.py:72: UserWarning: [EXPERIMENTAL] feature FeatureName.AGENT_CONFIG is enabled.\n"}
+,{"stream_name":"stderr","time":467.726746813,"data":"  check_feature_enabled()\n"}
+,{"stream_name":"stderr","time":467.726750913,"data":"/tmp/ipykernel_65/1475980464.py:80: UserWarning: [EXPERIMENTAL] EventsCompactionConfig: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.\n"}
+,{"stream_name":"stderr","time":467.726755696,"data":"  events_compaction_config=EventsCompactionConfig(\n"}
+,{"stream_name":"stderr","time":467.726759322,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox ac9c757e-f50, creating venv without pip: Command '['/tmp/swegemma_sandbox_ac9c757e-f50_ym8zn3zr/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":467.761998335,"data":"[1/36] Evaluating fastapi_14458 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":635.783471364,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 82ad3969-8aa, creating venv without pip: Command '['/tmp/swegemma_sandbox_82ad3969-8aa_1siwvfzi/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":635.783502581,"data":"\n"}
+,{"stream_name":"stderr","time":635.783506332,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 82ad3969-8aa, creating venv without pip: Command '['/tmp/swegemma_sandbox_82ad3969-8aa_1siwvfzi/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":639.173180405,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 44fa7582-adf, creating venv without pip: Command '['/tmp/swegemma_sandbox_44fa7582-adf_cpq31dl2/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":639.173218074,"data":"\n"}
+,{"stream_name":"stderr","time":639.173221282,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 44fa7582-adf, creating venv without pip: Command '['/tmp/swegemma_sandbox_44fa7582-adf_cpq31dl2/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":639.246719985,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=1375, tool_calls=10, duration=171.4s\n"}
+,{"stream_name":"stdout","time":639.24673995,"data":"TRACE_BEGIN fastapi_14458\n"}
+,{"stream_name":"stdout","time":639.24674274,"data":"TRACE_END fastapi_14458\n"}
+,{"stream_name":"stdout","time":639.246744754,"data":"PATCH_BEGIN fastapi_14458\n"}
+,{"stream_name":"stdout","time":639.246746642,"data":"diff --git a/fastapi/dependencies/models.py b/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":639.246748683,"data":"index af168a17..287e1b90 100644\n"}
+,{"stream_name":"stdout","time":639.246750583,"data":"--- a/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":639.246752435,"data":"+++ b/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":639.246754187,"data":"@@ -110,6 +110,8 @@ class Dependant:\n"}
+,{"stream_name":"stdout","time":639.246756019,"data":"             _impartial(self.call)\n"}
+,{"stream_name":"stdout","time":639.246757808,"data":"         ) or inspect.isgeneratorfunction(_unwrapped_call(self.call)):\n"}
+,{"stream_name":"stdout","time":639.246759815,"data":"             return True\n"}
+,{"stream_name":"stdout","time":639.246761595,"data":"+        if inspect.isclass(_unwrapped_call(self.call)):\n"}
+,{"stream_name":"stdout","time":639.246763519,"data":"+            return False\n"}
+,{"stream_name":"stdout","time":639.246765396,"data":"         dunder_call = getattr(_impartial(self.call), \"__call__\", None)  # noqa: B004\n"}
+,{"stream_name":"stdout","time":639.246767534,"data":"         if dunder_call is None:\n"}
+,{"stream_name":"stdout","time":639.246769313,"data":"             return False  # pragma: no cover\n"}
+,{"stream_name":"stdout","time":639.246771216,"data":"@@ -134,6 +136,8 @@ class Dependant:\n"}
+,{"stream_name":"stdout","time":639.246772945,"data":"             _impartial(self.call)\n"}
+,{"stream_name":"stdout","time":639.246774735,"data":"         ) or inspect.isasyncgenfunction(_unwrapped_call(self.call)):\n"}
+,{"stream_name":"stdout","time":639.246776571,"data":"             return True\n"}
+,{"stream_name":"stdout","time":639.246778307,"data":"+        if inspect.isclass(_unwrapped_call(self.call)):\n"}
+,{"stream_name":"stdout","time":639.246780224,"data":"+            return False\n"}
+,{"stream_name":"stdout","time":639.246782014,"data":"         dunder_call = getattr(_impartial(self.call), \"__call__\", None)  # noqa: B004\n"}
+,{"stream_name":"stdout","time":639.246783955,"data":"         if dunder_call is None:\n"}
+,{"stream_name":"stdout","time":639.24678577,"data":"             return False  # pragma: no cover\n"}
+,{"stream_name":"stdout","time":639.246787566,"data":"@@ -162,6 +166,8 @@ class Dependant:\n"}
+,{"stream_name":"stdout","time":639.246789343,"data":"             _unwrapped_call(self.call)\n"}
+,{"stream_name":"stdout","time":639.246791143,"data":"         ):\n"}
+,{"stream_name":"stdout","time":639.246792902,"data":"             return True\n"}
+,{"stream_name":"stdout","time":639.246794744,"data":"+        if inspect.isclass(_unwrapped_call(self.call)):\n"}
+,{"stream_name":"stdout","time":639.246796733,"data":"+            return False\n"}
+,{"stream_name":"stdout","time":639.246807419,"data":"         dunder_call = getattr(_impartial(self.call), \"__call__\", None)  # noqa: B004\n"}
+,{"stream_name":"stdout","time":639.246809498,"data":"         if dunder_call is None:\n"}
+,{"stream_name":"stdout","time":639.246811328,"data":"             return False  # pragma: no cover\n"}
+,{"stream_name":"stdout","time":639.246813148,"data":"PATCH_END fastapi_14458\n"}
+,{"stream_name":"stdout","time":639.24681489,"data":"[2/36] Evaluating rich_3953 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":942.961223377,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3953 agent timed out.\n"}
+,{"stream_name":"stderr","time":942.961257335,"data":"\n"}
+,{"stream_name":"stderr","time":942.961261042,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3953 agent timed out.\n"}
+,{"stream_name":"stderr","time":943.122761119,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b4e4b808-e13, creating venv without pip: Command '['/tmp/swegemma_sandbox_b4e4b808-e13_16htpm5o/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":943.122782484,"data":"\n"}
+,{"stream_name":"stderr","time":943.122785812,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b4e4b808-e13, creating venv without pip: Command '['/tmp/swegemma_sandbox_b4e4b808-e13_16htpm5o/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":945.567022675,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox fd6fc93e-c76, creating venv without pip: Command '['/tmp/swegemma_sandbox_fd6fc93e-c76_xrqsx0b7/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":945.567056551,"data":"\n"}
+,{"stream_name":"stderr","time":945.56706194,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox fd6fc93e-c76, creating venv without pip: Command '['/tmp/swegemma_sandbox_fd6fc93e-c76_xrqsx0b7/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":945.640621962,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1487, tool_calls=12, duration=306.4s\n"}
+,{"stream_name":"stdout","time":945.640651619,"data":"TRACE_BEGIN rich_3953\n"}
+,{"stream_name":"stdout","time":945.64065589,"data":"TRACE_END rich_3953\n"}
+,{"stream_name":"stdout","time":945.640659148,"data":"PATCH_BEGIN rich_3953\n"}
+,{"stream_name":"stdout","time":945.64066226,"data":"diff --git a/rich/cells.py b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":945.640665343,"data":"index 15fe7b65..1f849855 100644\n"}
+,{"stream_name":"stdout","time":945.640668391,"data":"--- a/rich/cells.py\n"}
+,{"stream_name":"stdout","time":945.640671246,"data":"+++ b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":945.640674303,"data":"@@ -132,6 +132,7 @@ def _cell_len(text: str, unicode_version: str) -\u003e int:\n"}
+,{"stream_name":"stdout","time":945.640677446,"data":"     cell_table = load_cell_table(unicode_version)\n"}
+,{"stream_name":"stdout","time":945.640680387,"data":"     total_width = 0\n"}
+,{"stream_name":"stdout","time":945.640683388,"data":"     last_measured_character: str | None = None\n"}
+,{"stream_name":"stdout","time":945.640686311,"data":"+    ignore_next_width = False\n"}
+,{"stream_name":"stdout","time":945.640689317,"data":" \n"}
+,{"stream_name":"stdout","time":945.640692134,"data":"     SPECIAL = {\"\\u200d\", \"\\ufe0f\"}\n"}
+,{"stream_name":"stdout","time":945.64069532,"data":" \n"}
+,{"stream_name":"stdout","time":945.640726117,"data":"@@ -140,14 +141,19 @@ def _cell_len(text: str, unicode_version: str) -\u003e int:\n"}
+,{"stream_name":"stdout","time":945.640729455,"data":"     for character in iter_characters:\n"}
+,{"stream_name":"stdout","time":945.64073176,"data":"         if character in SPECIAL:\n"}
+,{"stream_name":"stdout","time":945.640733852,"data":"             if character == \"\\u200d\":\n"}
+,{"stream_name":"stdout","time":945.640736075,"data":"-                next(iter_characters)\n"}
+,{"stream_name":"stdout","time":945.640738278,"data":"+                if last_measured_character and get_character_cell_size(last_measured_character, unicode_version) == 2:\n"}
+,{"stream_name":"stdout","time":945.640740553,"data":"+                    ignore_next_width = True\n"}
+,{"stream_name":"stdout","time":945.640742743,"data":"+                continue\n"}
+,{"stream_name":"stdout","time":945.640744871,"data":"             elif last_measured_character:\n"}
+,{"stream_name":"stdout","time":945.640748032,"data":"                 total_width += last_measured_character in cell_table.narrow_to_wide\n"}
+,{"stream_name":"stdout","time":945.640750383,"data":"                 last_measured_character = None\n"}
+,{"stream_name":"stdout","time":945.640752537,"data":"         else:\n"}
+,{"stream_name":"stdout","time":945.640754618,"data":"-            if character_width := get_character_cell_size(character, unicode_version):\n"}
+,{"stream_name":"stdout","time":945.640756866,"data":"+            character_width = get_character_cell_size(character, unicode_version)\n"}
+,{"stream_name":"stdout","time":945.640759087,"data":"+            if character_width:\n"}
+,{"stream_name":"stdout","time":945.640761188,"data":"+                if not (ignore_next_width and character_width == 2):\n"}
+,{"stream_name":"stdout","time":945.640763411,"data":"+                    total_width += character_width\n"}
+,{"stream_name":"stdout","time":945.640765528,"data":"+                ignore_next_width = False\n"}
+,{"stream_name":"stdout","time":945.640767721,"data":"                 last_measured_character = character\n"}
+,{"stream_name":"stdout","time":945.64076992,"data":"-                total_width += character_width\n"}
+,{"stream_name":"stdout","time":945.640772043,"data":" \n"}
+,{"stream_name":"stdout","time":945.640774052,"data":"     return total_width\n"}
+,{"stream_name":"stdout","time":945.640776089,"data":"PATCH_END rich_3953\n"}
+,{"stream_name":"stdout","time":945.640778155,"data":"[3/36] Evaluating rich_2943 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":1087.633326731,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3044cbbd-791, creating venv without pip: Command '['/tmp/swegemma_sandbox_3044cbbd-791_hwr96h4n/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":1087.6333582,"data":"\n"}
+,{"stream_name":"stderr","time":1087.633361485,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3044cbbd-791, creating venv without pip: Command '['/tmp/swegemma_sandbox_3044cbbd-791_hwr96h4n/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":1090.005880411,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 349400f6-609, creating venv without pip: Command '['/tmp/swegemma_sandbox_349400f6-609_viae8e02/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":1090.005904276,"data":"\n"}
+,{"stream_name":"stderr","time":1090.00590745,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 349400f6-609, creating venv without pip: Command '['/tmp/swegemma_sandbox_349400f6-609_viae8e02/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":1090.078424055,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=399, tool_calls=26, duration=144.4s\n"}
+,{"stream_name":"stdout","time":1090.078447031,"data":"TRACE_BEGIN rich_2943\n"}
+,{"stream_name":"stdout","time":1090.078450257,"data":"TRACE_END rich_2943\n"}
+,{"stream_name":"stdout","time":1090.078452215,"data":"PATCH_BEGIN rich_2943\n"}
+,{"stream_name":"stdout","time":1090.078454154,"data":"diff --git a/rich/style.py b/rich/style.py\n"}
+,{"stream_name":"stdout","time":1090.078456051,"data":"index 313c8894..262fd6ec 100644\n"}
+,{"stream_name":"stdout","time":1090.078457885,"data":"--- a/rich/style.py\n"}
+,{"stream_name":"stdout","time":1090.078459571,"data":"+++ b/rich/style.py\n"}
+,{"stream_name":"stdout","time":1090.07846128,"data":"@@ -663,7 +663,7 @@ class Style:\n"}
+,{"stream_name":"stdout","time":1090.078463215,"data":"         style._set_attributes = self._set_attributes\n"}
+,{"stream_name":"stdout","time":1090.078464986,"data":"         style._link = None\n"}
+,{"stream_name":"stdout","time":1090.078466687,"data":"         style._link_id = \"\"\n"}
+,{"stream_name":"stdout","time":1090.078468525,"data":"-        style._hash = self._hash\n"}
+,{"stream_name":"stdout","time":1090.078470326,"data":"+        style._hash = None\n"}
+,{"stream_name":"stdout","time":1090.078472131,"data":"         style._null = False\n"}
+,{"stream_name":"stdout","time":1090.078473886,"data":"         style._meta = None\n"}
+,{"stream_name":"stdout","time":1090.078475605,"data":"         return style\n"}
+,{"stream_name":"stdout","time":1090.078477352,"data":"PATCH_END rich_2943\n"}
+,{"stream_name":"stdout","time":1090.078479072,"data":"[4/36] Evaluating rich_3521 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":1393.448867589,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3521 agent timed out.\n"}
+,{"stream_name":"stderr","time":1393.448900822,"data":"\n"}
+,{"stream_name":"stderr","time":1393.448904758,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3521 agent timed out.\n"}
+,{"stream_name":"stderr","time":1393.462490886,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3521 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":1393.462517737,"data":"\n"}
+,{"stream_name":"stderr","time":1393.462521864,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3521 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":1393.621439813,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b09d0648-cc9, creating venv without pip: Command '['/tmp/swegemma_sandbox_b09d0648-cc9_ceqfrvj9/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":1393.621459608,"data":"\n"}
+,{"stream_name":"stderr","time":1393.621462779,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b09d0648-cc9, creating venv without pip: Command '['/tmp/swegemma_sandbox_b09d0648-cc9_ceqfrvj9/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":1393.69218516,"data":"  -\u003e resolved=False, exit_code=-1, patch_chars=0, tool_calls=24, duration=303.6s\n"}
+,{"stream_name":"stdout","time":1393.692207441,"data":"TRACE_BEGIN rich_3521\n"}
+,{"stream_name":"stdout","time":1393.692210925,"data":"TRACE_END rich_3521\n"}
+,{"stream_name":"stdout","time":1393.692224424,"data":"PATCH_BEGIN rich_3521\n"}
+,{"stream_name":"stdout","time":1393.692226742,"data":"\n"}
+,{"stream_name":"stdout","time":1393.692228709,"data":"PATCH_END rich_3521\n"}
+,{"stream_name":"stdout","time":1393.69223063,"data":"[5/36] Evaluating rich_3938 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":1696.833830804,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3938 agent timed out.\n"}
+,{"stream_name":"stderr","time":1696.833869763,"data":"\n"}
+,{"stream_name":"stderr","time":1696.833874598,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3938 agent timed out.\n"}
+,{"stream_name":"stderr","time":1696.986675693,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 33ee723f-3f1, creating venv without pip: Command '['/tmp/swegemma_sandbox_33ee723f-3f1_r9a4a8qu/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":1696.986714887,"data":"\n"}
+,{"stream_name":"stderr","time":1696.986719505,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 33ee723f-3f1, creating venv without pip: Command '['/tmp/swegemma_sandbox_33ee723f-3f1_r9a4a8qu/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":1697.058186865,"data":"  -\u003e resolved=False, exit_code=-1, patch_chars=0, tool_calls=30, duration=303.4s\n"}
+,{"stream_name":"stdout","time":1697.058207846,"data":"TRACE_BEGIN rich_3938\n"}
+,{"stream_name":"stdout","time":1697.058211276,"data":"TRACE_END rich_3938\n"}
+,{"stream_name":"stdout","time":1697.058213883,"data":"PATCH_BEGIN rich_3938\n"}
+,{"stream_name":"stdout","time":1697.058216649,"data":"\n"}
+,{"stream_name":"stdout","time":1697.058219049,"data":"PATCH_END rich_3938\n"}
+,{"stream_name":"stdout","time":1697.058221486,"data":"[6/36] Evaluating rich_3930 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":2000.536408312,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3930 agent timed out.\n"}
+,{"stream_name":"stderr","time":2000.536443569,"data":"\n"}
+,{"stream_name":"stderr","time":2000.536447301,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3930 agent timed out.\n"}
+,{"stream_name":"stderr","time":2000.700522647,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox f448f0bc-f12, creating venv without pip: Command '['/tmp/swegemma_sandbox_f448f0bc-f12__hxbccj8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2000.700547843,"data":"\n"}
+,{"stream_name":"stderr","time":2000.700551434,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox f448f0bc-f12, creating venv without pip: Command '['/tmp/swegemma_sandbox_f448f0bc-f12__hxbccj8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2003.375330287,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 62dd3a26-6b2, creating venv without pip: Command '['/tmp/swegemma_sandbox_62dd3a26-6b2_0phpvqpl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2003.375355758,"data":"\n"}
+,{"stream_name":"stderr","time":2003.37535947,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 62dd3a26-6b2, creating venv without pip: Command '['/tmp/swegemma_sandbox_62dd3a26-6b2_0phpvqpl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":2003.448944998,"data":"  -\u003e resolved=False, exit_code=2, patch_chars=2460, tool_calls=15, duration=306.4s\n"}
+,{"stream_name":"stdout","time":2003.448979148,"data":"TRACE_BEGIN rich_3930\n"}
+,{"stream_name":"stdout","time":2003.448982059,"data":"TRACE_END rich_3930\n"}
+,{"stream_name":"stdout","time":2003.448984162,"data":"PATCH_BEGIN rich_3930\n"}
+,{"stream_name":"stdout","time":2003.448985928,"data":"diff --git a/rich/cells.py b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":2003.448987718,"data":"index a8546227..4f5b5e1e 100644\n"}
+,{"stream_name":"stdout","time":2003.448989475,"data":"--- a/rich/cells.py\n"}
+,{"stream_name":"stdout","time":2003.448991248,"data":"+++ b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":2003.448992956,"data":"@@ -30,6 +30,41 @@ _SINGLE_CELLS = frozenset(\n"}
+,{"stream_name":"stdout","time":2003.44899476,"data":" _is_single_cell_widths: Callable[[str], bool] = _SINGLE_CELLS.issuperset\n"}
+,{"stream_name":"stdout","time":2003.448996604,"data":" \n"}
+,{"stream_name":"stdout","time":2003.448998418,"data":" \n"}
+,{"stream_name":"stdout","time":2003.449000117,"data":"+def is_continuation(char: str) -\u003e bool:\n"}
+,{"stream_name":"stdout","time":2003.449001998,"data":"+    \"\"\"Check if a character is a grapheme continuation.\"\"\"\n"}
+,{"stream_name":"stdout","time":2003.449004042,"data":"+    cp = ord(char)\n"}
+,{"stream_name":"stdout","time":2003.449005869,"data":"+    return (\n"}
+,{"stream_name":"stdout","time":2003.449007615,"data":"+        (0x0300 \u003c= cp \u003c= 0x036F) or  # Combining Diacritical Marks\n"}
+,{"stream_name":"stdout","time":2003.44901007,"data":"+        (0x1AB0 \u003c= cp \u003c= 0x1AFF) or  # Combining Diacritical Marks Supplement\n"}
+,{"stream_name":"stdout","time":2003.449012058,"data":"+        (0x20D0 \u003c= cp \u003c= 0x20FF) or  # Combining Diacritical Marks for Symbols\n"}
+,{"stream_name":"stdout","time":2003.449014045,"data":"+        (0xFE00 \u003c= cp \u003c= 0xFE0F) or  # Combining Half Marks\n"}
+,{"stream_name":"stdout","time":2003.44901593,"data":"+        (cp == 0x200D) or            # Zero Width Joiner\n"}
+,{"stream_name":"stdout","time":2003.449017706,"data":"+        (0x1F3FB \u003c= cp \u003c= 0x1F3FF)   # Emoji Modifier\n"}
+,{"stream_name":"stdout","time":2003.449019579,"data":"+    )\n"}
+,{"stream_name":"stdout","time":2003.449021289,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449022953,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.44902462,"data":"+def split_graphemes(text: str) -\u003e list[str]:\n"}
+,{"stream_name":"stdout","time":2003.449026424,"data":"+    \"\"\"Split a string into a list of graphemes.\"\"\"\n"}
+,{"stream_name":"stdout","time":2003.449028459,"data":"+    if not text:\n"}
+,{"stream_name":"stdout","time":2003.449030197,"data":"+        return []\n"}
+,{"stream_name":"stdout","time":2003.449031913,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.44903358,"data":"+    graphemes = []\n"}
+,{"stream_name":"stdout","time":2003.44903526,"data":"+    current_grapheme = \"\"\n"}
+,{"stream_name":"stdout","time":2003.449037021,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449038659,"data":"+    for char in text:\n"}
+,{"stream_name":"stdout","time":2003.449040397,"data":"+        if is_continuation(char):\n"}
+,{"stream_name":"stdout","time":2003.44904223,"data":"+            current_grapheme += char\n"}
+,{"stream_name":"stdout","time":2003.449044013,"data":"+        else:\n"}
+,{"stream_name":"stdout","time":2003.44904574,"data":"+            if current_grapheme:\n"}
+,{"stream_name":"stdout","time":2003.449047529,"data":"+                graphemes.append(current_grapheme)\n"}
+,{"stream_name":"stdout","time":2003.449049309,"data":"+            current_grapheme = char\n"}
+,{"stream_name":"stdout","time":2003.449053559,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449056245,"data":"+    if current_grapheme:\n"}
+,{"stream_name":"stdout","time":2003.449058028,"data":"+        graphemes.append(current_grapheme)\n"}
+,{"stream_name":"stdout","time":2003.449059965,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449061627,"data":"+    return graphemes\n"}
+,{"stream_name":"stdout","time":2003.449063339,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449065016,"data":"+\n"}
+,{"stream_name":"stdout","time":2003.449066656,"data":" @lru_cache(4096)\n"}
+,{"stream_name":"stdout","time":2003.449068347,"data":" def cached_cell_len(text: str) -\u003e int:\n"}
+,{"stream_name":"stdout","time":2003.449070194,"data":"     \"\"\"Get the number of cells required to display text.\n"}
+,{"stream_name":"stdout","time":2003.449072065,"data":"@@ -45,7 +80,7 @@ def cached_cell_len(text: str) -\u003e int:\n"}
+,{"stream_name":"stdout","time":2003.449074012,"data":"     \"\"\"\n"}
+,{"stream_name":"stdout","time":2003.449075765,"data":"     if _is_single_cell_widths(text):\n"}
+,{"stream_name":"stdout","time":2003.449077519,"data":"         return len(text)\n"}
+,{"stream_name":"stdout","time":2003.449079319,"data":"-    return sum(map(get_character_cell_size, text))\n"}
+,{"stream_name":"stdout","time":2003.449081145,"data":"+    return sum(map(get_character_cell_size, split_graphemes(text)))\n"}
+,{"stream_name":"stdout","time":2003.449082961,"data":" \n"}
+,{"stream_name":"stdout","time":2003.449084599,"data":" \n"}
+,{"stream_name":"stdout","time":2003.449086254,"data":" def cell_len(text: str, _cell_len: Callable[[str], int] = cached_cell_len) -\u003e int:\n"}
+,{"stream_name":"stdout","time":2003.449088317,"data":"@@ -61,7 +96,7 @@ def cell_len(text: str, _cell_len: Callable[[str], int] = cached_cell_len) -\u003e in\n"}
+,{"stream_name":"stdout","time":2003.449090249,"data":"         return _cell_len(text)\n"}
+,{"stream_name":"stdout","time":2003.449092885,"data":"     if _is_single_cell_widths(text):\n"}
+,{"stream_name":"stdout","time":2003.449094742,"data":"         return len(text)\n"}
+,{"stream_name":"stdout","time":2003.449096476,"data":"-    return sum(map(get_character_cell_size, text))\n"}
+,{"stream_name":"stdout","time":2003.449098349,"data":"+    return sum(map(get_character_cell_size, split_graphemes(text)))\n"}
+,{"stream_name":"stdout","time":2003.449100157,"data":" \n"}
+,{"stream_name":"stdout","time":2003.449101789,"data":" \n"}
+,{"stream_name":"stdout","time":2003.449103519,"data":" @lru_cache(maxsize=4096)\n"}
+,{"stream_name":"stdout","time":2003.449105269,"data":"@@ -74,7 +109,9 @@ def get_character_cell_size(character: str) -\u003e int:\n"}
+,{"stream_name":"stdout","time":2003.44910714,"data":"     Returns:\n"}
+,{"stream_name":"stdout","time":2003.4491089,"data":"         int: Number of cells (0, 1 or 2) occupied by that character.\n"}
+,{"stream_name":"stdout","time":2003.449110691,"data":"     \"\"\"\n"}
+,{"stream_name":"stdout","time":2003.44911238,"data":"-    codepoint = ord(character)\n"}
+,{"stream_name":"stdout","time":2003.449114104,"data":"+    if not character:\n"}
+,{"stream_name":"stdout","time":2003.449115799,"data":"+        return 0\n"}
+,{"stream_name":"stdout","time":2003.449117702,"data":"+    codepoint = ord(character[0])\n"}
+,{"stream_name":"stdout","time":2003.449119543,"data":"     _table = CELL_WIDTHS\n"}
+,{"stream_name":"stdout","time":2003.449121265,"data":"     lower_bound = 0\n"}
+,{"stream_name":"stdout","time":2003.449122994,"data":"     upper_bound = len(_table) - 1\n"}
+,{"stream_name":"stdout","time":2003.44912665,"data":"PATCH_END rich_3930\n"}
+,{"stream_name":"stdout","time":2003.449128498,"data":"[7/36] Evaluating rich_3777 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":2246.303447482,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 50ffac20-2de, creating venv without pip: Command '['/tmp/swegemma_sandbox_50ffac20-2de_sej64se8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2246.303479332,"data":"\n"}
+,{"stream_name":"stderr","time":2246.303482926,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 50ffac20-2de, creating venv without pip: Command '['/tmp/swegemma_sandbox_50ffac20-2de_sej64se8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2249.523480172,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox d0868a02-68c, creating venv without pip: Command '['/tmp/swegemma_sandbox_d0868a02-68c_ziw4v63a/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2249.523508775,"data":"\n"}
+,{"stream_name":"stderr","time":2249.523512375,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox d0868a02-68c, creating venv without pip: Command '['/tmp/swegemma_sandbox_d0868a02-68c_ziw4v63a/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":2249.596961766,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=0, tool_calls=30, duration=246.1s\n"}
+,{"stream_name":"stdout","time":2249.596984683,"data":"TRACE_BEGIN rich_3777\n"}
+,{"stream_name":"stdout","time":2249.596988005,"data":"TRACE_END rich_3777\n"}
+,{"stream_name":"stdout","time":2249.59699052,"data":"PATCH_BEGIN rich_3777\n"}
+,{"stream_name":"stdout","time":2249.596993003,"data":"\n"}
+,{"stream_name":"stdout","time":2249.596995311,"data":"PATCH_END rich_3777\n"}
+,{"stream_name":"stdout","time":2249.596998172,"data":"[8/36] Evaluating rich_3468 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":2500.13085902,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cfc8f369-78d, creating venv without pip: Command '['/tmp/swegemma_sandbox_cfc8f369-78d_02it9ywo/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2500.130909699,"data":"\n"}
+,{"stream_name":"stderr","time":2500.130913657,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cfc8f369-78d, creating venv without pip: Command '['/tmp/swegemma_sandbox_cfc8f369-78d_02it9ywo/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2503.353022181,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 92864ba3-634, creating venv without pip: Command '['/tmp/swegemma_sandbox_92864ba3-634_7a0hz_8d/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2503.353047487,"data":"\n"}
+,{"stream_name":"stderr","time":2503.353050649,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 92864ba3-634, creating venv without pip: Command '['/tmp/swegemma_sandbox_92864ba3-634_7a0hz_8d/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":2503.427637163,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1100, tool_calls=30, duration=253.8s\n"}
+,{"stream_name":"stdout","time":2503.427664495,"data":"TRACE_BEGIN rich_3468\n"}
+,{"stream_name":"stdout","time":2503.427682753,"data":"TRACE_END rich_3468\n"}
+,{"stream_name":"stdout","time":2503.427686283,"data":"PATCH_BEGIN rich_3468\n"}
+,{"stream_name":"stdout","time":2503.427689293,"data":"diff --git a/rich/console.py b/rich/console.py\n"}
+,{"stream_name":"stdout","time":2503.427692793,"data":"index ee543553..bf62f321 100644\n"}
+,{"stream_name":"stdout","time":2503.427694721,"data":"--- a/rich/console.py\n"}
+,{"stream_name":"stdout","time":2503.427718161,"data":"+++ b/rich/console.py\n"}
+,{"stream_name":"stdout","time":2503.427724163,"data":"@@ -2057,6 +2057,8 @@ class Console:\n"}
+,{"stream_name":"stdout","time":2503.427727184,"data":"                             except UnicodeEncodeError as error:\n"}
+,{"stream_name":"stdout","time":2503.427730007,"data":"                                 error.reason = f\"{error.reason}\\n*** You may need to add PYTHONIOENCODING=utf-8 to your environment ***\"\n"}
+,{"stream_name":"stdout","time":2503.427733443,"data":"                                 raise\n"}
+,{"stream_name":"stdout","time":2503.427736358,"data":"+                            except BrokenPipeError:\n"}
+,{"stream_name":"stdout","time":2503.427740095,"data":"+                                raise SystemExit(0) from None\n"}
+,{"stream_name":"stdout","time":2503.427743321,"data":"                     else:\n"}
+,{"stream_name":"stdout","time":2503.427746523,"data":"                         text = self._render_buffer(self._buffer[:])\n"}
+,{"stream_name":"stdout","time":2503.427749715,"data":"                         try:\n"}
+,{"stream_name":"stdout","time":2503.42775275,"data":"@@ -2064,6 +2066,8 @@ class Console:\n"}
+,{"stream_name":"stdout","time":2503.427755806,"data":"                         except UnicodeEncodeError as error:\n"}
+,{"stream_name":"stdout","time":2503.427759383,"data":"                             error.reason = f\"{error.reason}\\n*** You may need to add PYTHONIOENCODING=utf-8 to your environment ***\"\n"}
+,{"stream_name":"stdout","time":2503.427762986,"data":"                             raise\n"}
+,{"stream_name":"stdout","time":2503.427765997,"data":"+                        except BrokenPipeError:\n"}
+,{"stream_name":"stdout","time":2503.427769201,"data":"+                            raise SystemExit(0) from None\n"}
+,{"stream_name":"stdout","time":2503.427771801,"data":" \n"}
+,{"stream_name":"stdout","time":2503.427773527,"data":"                     self.file.flush()\n"}
+,{"stream_name":"stdout","time":2503.427775269,"data":"                     del self._buffer[:]\n"}
+,{"stream_name":"stdout","time":2503.427777024,"data":"PATCH_END rich_3468\n"}
+,{"stream_name":"stdout","time":2503.427778822,"data":"[9/36] Evaluating fastapi_14616 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":2741.550224125,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 1494467f-de6, creating venv without pip: Command '['/tmp/swegemma_sandbox_1494467f-de6_fb_8elei/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2741.550256535,"data":"\n"}
+,{"stream_name":"stderr","time":2741.550260223,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 1494467f-de6, creating venv without pip: Command '['/tmp/swegemma_sandbox_1494467f-de6_fb_8elei/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2744.758512082,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2e9de232-2ae, creating venv without pip: Command '['/tmp/swegemma_sandbox_2e9de232-2ae_58qceit8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2744.758550284,"data":"\n"}
+,{"stream_name":"stderr","time":2744.758553341,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2e9de232-2ae, creating venv without pip: Command '['/tmp/swegemma_sandbox_2e9de232-2ae_58qceit8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":2744.832109744,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=535, tool_calls=30, duration=241.3s\n"}
+,{"stream_name":"stdout","time":2744.832132404,"data":"TRACE_BEGIN fastapi_14616\n"}
+,{"stream_name":"stdout","time":2744.832135261,"data":"TRACE_END fastapi_14616\n"}
+,{"stream_name":"stdout","time":2744.832137239,"data":"PATCH_BEGIN fastapi_14616\n"}
+,{"stream_name":"stdout","time":2744.832139282,"data":"diff --git a/fastapi/_compat/v2.py b/fastapi/_compat/v2.py\n"}
+,{"stream_name":"stdout","time":2744.832141241,"data":"index dae78a32..8033947d 100644\n"}
+,{"stream_name":"stdout","time":2744.832143104,"data":"--- a/fastapi/_compat/v2.py\n"}
+,{"stream_name":"stdout","time":2744.832144872,"data":"+++ b/fastapi/_compat/v2.py\n"}
+,{"stream_name":"stdout","time":2744.832146661,"data":"@@ -404,6 +404,9 @@ def is_scalar_field(field: ModelField) -\u003e bool:\n"}
+,{"stream_name":"stdout","time":2744.832148729,"data":" \n"}
+,{"stream_name":"stdout","time":2744.832150503,"data":" \n"}
+,{"stream_name":"stdout","time":2744.832152213,"data":" def is_sequence_field(field: ModelField) -\u003e bool:\n"}
+,{"stream_name":"stdout","time":2744.832154098,"data":"+    if hasattr(field.field_info, \"metadata\") and field.field_info.metadata:\n"}
+,{"stream_name":"stdout","time":2744.832156299,"data":"+        if any(type(item).__name__ == \"Json\" for item in field.field_info.metadata):\n"}
+,{"stream_name":"stdout","time":2744.832158281,"data":"+            return False\n"}
+,{"stream_name":"stdout","time":2744.832160069,"data":"     return shared.field_annotation_is_sequence(field.field_info.annotation)\n"}
+,{"stream_name":"stdout","time":2744.832161964,"data":"PATCH_END fastapi_14616\n"}
+,{"stream_name":"stdout","time":2744.832163878,"data":"[10/36] Evaluating rich_4070 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":2972.150170978,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 6d31b1cb-0ce, creating venv without pip: Command '['/tmp/swegemma_sandbox_6d31b1cb-0ce_66d0ix7g/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2972.150205752,"data":"\n"}
+,{"stream_name":"stderr","time":2972.150209624,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 6d31b1cb-0ce, creating venv without pip: Command '['/tmp/swegemma_sandbox_6d31b1cb-0ce_66d0ix7g/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2973.843826765,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 11526ef8-f16, creating venv without pip: Command '['/tmp/swegemma_sandbox_11526ef8-f16_3q0zaoo8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":2973.843854336,"data":"\n"}
+,{"stream_name":"stderr","time":2973.843858104,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 11526ef8-f16, creating venv without pip: Command '['/tmp/swegemma_sandbox_11526ef8-f16_3q0zaoo8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":2973.918402861,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=2672, tool_calls=29, duration=229.1s\n"}
+,{"stream_name":"stdout","time":2973.918434031,"data":"TRACE_BEGIN rich_4070\n"}
+,{"stream_name":"stdout","time":2973.918437214,"data":"TRACE_END rich_4070\n"}
+,{"stream_name":"stdout","time":2973.918439159,"data":"PATCH_BEGIN rich_4070\n"}
+,{"stream_name":"stdout","time":2973.918441163,"data":"diff --git a/rich/console.py b/rich/console.py\n"}
+,{"stream_name":"stdout","time":2973.918443058,"data":"index ad92d529..088b80aa 100644\n"}
+,{"stream_name":"stdout","time":2973.918444918,"data":"--- a/rich/console.py\n"}
+,{"stream_name":"stdout","time":2973.918446631,"data":"+++ b/rich/console.py\n"}
+,{"stream_name":"stdout","time":2973.918448798,"data":"@@ -1,15 +1,10 @@\n"}
+,{"stream_name":"stdout","time":2973.918455286,"data":"-import inspect\n"}
+,{"stream_name":"stdout","time":2973.918457188,"data":" import os\n"}
+,{"stream_name":"stdout","time":2973.918458994,"data":" import sys\n"}
+,{"stream_name":"stdout","time":2973.918460848,"data":" import threading\n"}
+,{"stream_name":"stdout","time":2973.918462564,"data":"-import zlib\n"}
+,{"stream_name":"stdout","time":2973.918464335,"data":" from abc import ABC, abstractmethod\n"}
+,{"stream_name":"stdout","time":2973.91846626,"data":" from dataclasses import dataclass, field\n"}
+,{"stream_name":"stdout","time":2973.918468155,"data":" from datetime import datetime\n"}
+,{"stream_name":"stdout","time":2973.918469911,"data":" from functools import wraps\n"}
+,{"stream_name":"stdout","time":2973.918471649,"data":"-from getpass import getpass\n"}
+,{"stream_name":"stdout","time":2973.918473438,"data":"-from html import escape\n"}
+,{"stream_name":"stdout","time":2973.918475258,"data":"-from inspect import isclass\n"}
+,{"stream_name":"stdout","time":2973.918476992,"data":" from itertools import islice\n"}
+,{"stream_name":"stdout","time":2973.918478849,"data":" from math import ceil\n"}
+,{"stream_name":"stdout","time":2973.918480582,"data":" from time import monotonic\n"}
+,{"stream_name":"stdout","time":2973.918482357,"data":"@@ -50,7 +45,6 @@ from .highlighter import NullHighlighter, ReprHighlighter\n"}
+,{"stream_name":"stdout","time":2973.918484237,"data":" from .markup import render as render_markup\n"}
+,{"stream_name":"stdout","time":2973.918486131,"data":" from .measure import Measurement, measure_renderables\n"}
+,{"stream_name":"stdout","time":2973.918488002,"data":" from .pager import Pager, SystemPager\n"}
+,{"stream_name":"stdout","time":2973.918489778,"data":"-from .pretty import Pretty, is_expandable\n"}
+,{"stream_name":"stdout","time":2973.918491568,"data":" from .protocol import rich_cast\n"}
+,{"stream_name":"stdout","time":2973.918493483,"data":" from .region import Region\n"}
+,{"stream_name":"stdout","time":2973.918495226,"data":" from .scope import render_scope\n"}
+,{"stream_name":"stdout","time":2973.918496952,"data":"diff --git a/rich/logging.py b/rich/logging.py\n"}
+,{"stream_name":"stdout","time":2973.918499152,"data":"index c3e7a5f6..a526d66e 100644\n"}
+,{"stream_name":"stdout","time":2973.918500941,"data":"--- a/rich/logging.py\n"}
+,{"stream_name":"stdout","time":2973.91850273,"data":"+++ b/rich/logging.py\n"}
+,{"stream_name":"stdout","time":2973.918504461,"data":"@@ -1,18 +1,23 @@\n"}
+,{"stream_name":"stdout","time":2973.918506167,"data":"+from __future__ import annotations\n"}
+,{"stream_name":"stdout","time":2973.918507947,"data":"+\n"}
+,{"stream_name":"stdout","time":2973.918509658,"data":" import logging\n"}
+,{"stream_name":"stdout","time":2973.918511382,"data":"+import os\n"}
+,{"stream_name":"stdout","time":2973.918513072,"data":" from datetime import datetime\n"}
+,{"stream_name":"stdout","time":2973.918517943,"data":" from logging import Handler, LogRecord\n"}
+,{"stream_name":"stdout","time":2973.918519899,"data":"-from pathlib import Path\n"}
+,{"stream_name":"stdout","time":2973.918521632,"data":" from types import ModuleType\n"}
+,{"stream_name":"stdout","time":2973.918523461,"data":"-from typing import ClassVar, Iterable, List, Optional, Type, Union\n"}
+,{"stream_name":"stdout","time":2973.918525328,"data":"+from typing import TYPE_CHECKING, ClassVar, Iterable, List, Optional, Type, Union\n"}
+,{"stream_name":"stdout","time":2973.918527207,"data":"+\n"}
+,{"stream_name":"stdout","time":2973.918528863,"data":"+if TYPE_CHECKING:\n"}
+,{"stream_name":"stdout","time":2973.918530576,"data":"+    from ._log_render import FormatTimeCallable\n"}
+,{"stream_name":"stdout","time":2973.918532358,"data":"+    from .console import Console, ConsoleRenderable\n"}
+,{"stream_name":"stdout","time":2973.918534228,"data":"+    from .highlighter import Highlighter\n"}
+,{"stream_name":"stdout","time":2973.918535991,"data":" \n"}
+,{"stream_name":"stdout","time":2973.918537644,"data":" from rich._null_file import NullFile\n"}
+,{"stream_name":"stdout","time":2973.918539412,"data":" \n"}
+,{"stream_name":"stdout","time":2973.918541068,"data":" from . import get_console\n"}
+,{"stream_name":"stdout","time":2973.918542817,"data":"-from ._log_render import FormatTimeCallable, LogRender\n"}
+,{"stream_name":"stdout","time":2973.918544623,"data":"-from .console import Console, ConsoleRenderable\n"}
+,{"stream_name":"stdout","time":2973.91854638,"data":"-from .highlighter import Highlighter, ReprHighlighter\n"}
+,{"stream_name":"stdout","time":2973.918548237,"data":"+from ._log_render import LogRender\n"}
+,{"stream_name":"stdout","time":2973.918549977,"data":"+from .highlighter import ReprHighlighter\n"}
+,{"stream_name":"stdout","time":2973.918551926,"data":" from .text import Text\n"}
+,{"stream_name":"stdout","time":2973.918553732,"data":"-from .traceback import Traceback\n"}
+,{"stream_name":"stdout","time":2973.918555487,"data":" \n"}
+,{"stream_name":"stdout","time":2973.918557154,"data":" \n"}
+,{"stream_name":"stdout","time":2973.918559621,"data":" class RichHandler(Handler):\n"}
+,{"stream_name":"stdout","time":2973.918561447,"data":"@@ -138,6 +143,7 @@ class RichHandler(Handler):\n"}
+,{"stream_name":"stdout","time":2973.918563314,"data":"             and record.exc_info\n"}
+,{"stream_name":"stdout","time":2973.918565187,"data":"             and record.exc_info != (None, None, None)\n"}
+,{"stream_name":"stdout","time":2973.918566953,"data":"         ):\n"}
+,{"stream_name":"stdout","time":2973.918568674,"data":"+            from .traceback import Traceback\n"}
+,{"stream_name":"stdout","time":2973.918570481,"data":"             exc_type, exc_value, exc_traceback = record.exc_info\n"}
+,{"stream_name":"stdout","time":2973.918572298,"data":"             assert exc_type is not None\n"}
+,{"stream_name":"stdout","time":2973.918574049,"data":"             assert exc_value is not None\n"}
+,{"stream_name":"stdout","time":2973.918575776,"data":"@@ -221,7 +227,7 @@ class RichHandler(Handler):\n"}
+,{"stream_name":"stdout","time":2973.918577611,"data":"         Returns:\n"}
+,{"stream_name":"stdout","time":2973.918579326,"data":"             ConsoleRenderable: Renderable to display log.\n"}
+,{"stream_name":"stdout","time":2973.918581129,"data":"         \"\"\"\n"}
+,{"stream_name":"stdout","time":2973.918582988,"data":"-        path = Path(record.pathname).name\n"}
+,{"stream_name":"stdout","time":2973.918584776,"data":"+        path = os.path.basename(record.pathname)\n"}
+,{"stream_name":"stdout","time":2973.918586518,"data":"         level = self.get_level_text(record)\n"}
+,{"stream_name":"stdout","time":2973.918590389,"data":"         time_format = None if self.formatter is None else self.formatter.datefmt\n"}
+,{"stream_name":"stdout","time":2973.918592402,"data":"         log_time = datetime.fromtimestamp(record.created)\n"}
+,{"stream_name":"stdout","time":2973.918594285,"data":"PATCH_END rich_4070\n"}
+,{"stream_name":"stdout","time":2973.918596026,"data":"[11/36] Evaluating fastapi_14487 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":3259.242081362,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a80adb2f-366, creating venv without pip: Command '['/tmp/swegemma_sandbox_a80adb2f-366_dx1xxoqm/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3259.242112907,"data":"\n"}
+,{"stream_name":"stderr","time":3259.242116514,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a80adb2f-366, creating venv without pip: Command '['/tmp/swegemma_sandbox_a80adb2f-366_dx1xxoqm/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3262.512283605,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a049ffb5-a0e, creating venv without pip: Command '['/tmp/swegemma_sandbox_a049ffb5-a0e_rrcd31pc/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3262.512311811,"data":"\n"}
+,{"stream_name":"stderr","time":3262.512315474,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a049ffb5-a0e, creating venv without pip: Command '['/tmp/swegemma_sandbox_a049ffb5-a0e_rrcd31pc/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":3262.567048349,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=7128, tool_calls=26, duration=288.6s\n"}
+,{"stream_name":"stdout","time":3262.567071626,"data":"TRACE_BEGIN fastapi_14487\n"}
+,{"stream_name":"stdout","time":3262.567075093,"data":"TRACE_END fastapi_14487\n"}
+,{"stream_name":"stdout","time":3262.567077725,"data":"PATCH_BEGIN fastapi_14487\n"}
+,{"stream_name":"stdout","time":3262.567080373,"data":"diff --git a/docs/en/docs/how-to/custom-request-and-route.md b/docs/en/docs/how-to/custom-request-and-route.md\n"}
+,{"stream_name":"stdout","time":3262.567082979,"data":"index bfc60729..f6877bfb 100644\n"}
+,{"stream_name":"stdout","time":3262.567085415,"data":"--- a/docs/en/docs/how-to/custom-request-and-route.md\n"}
+,{"stream_name":"stdout","time":3262.567087871,"data":"+++ b/docs/en/docs/how-to/custom-request-and-route.md\n"}
+,{"stream_name":"stdout","time":3262.567090255,"data":"@@ -96,7 +96,7 @@ All we need to do is handle the request inside a `try`/`except` block:\n"}
+,{"stream_name":"stdout","time":3262.567092695,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567095037,"data":" If an exception occurs, the`Request` instance will still be in scope, so we can read and make use of the request body when handling the error:\n"}
+,{"stream_name":"stdout","time":3262.567097652,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567099866,"data":"-{* ../../docs_src/custom_request_and_route/tutorial002_an_py310.py hl[17:19] *}\n"}
+,{"stream_name":"stdout","time":3262.567102271,"data":"+{* ../../docs_src/custom_request_and_route/tutorial002_an_py310.py hl[17:18] *}\n"}
+,{"stream_name":"stdout","time":3262.567104756,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567107,"data":" ## Custom `APIRoute` class in a router { #custom-apiroute-class-in-a-router }\n"}
+,{"stream_name":"stdout","time":3262.567109431,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567121524,"data":"diff --git a/docs/en/docs/tutorial/handling-errors.md b/docs/en/docs/tutorial/handling-errors.md\n"}
+,{"stream_name":"stdout","time":3262.567123747,"data":"index 53501837..fa902bf4 100644\n"}
+,{"stream_name":"stdout","time":3262.567125571,"data":"--- a/docs/en/docs/tutorial/handling-errors.md\n"}
+,{"stream_name":"stdout","time":3262.567127337,"data":"+++ b/docs/en/docs/tutorial/handling-errors.md\n"}
+,{"stream_name":"stdout","time":3262.567129064,"data":"@@ -192,7 +192,7 @@ You could also use `from starlette.responses import PlainTextResponse`.\n"}
+,{"stream_name":"stdout","time":3262.567131024,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567132745,"data":" The `RequestValidationError` contains the `body` it received with invalid data.\n"}
+,{"stream_name":"stdout","time":3262.567134616,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567136295,"data":"-You could use it while developing your app to log the body and debug it, return it to the user, etc.\n"}
+,{"stream_name":"stdout","time":3262.567138207,"data":"+You could use it while developing your app to log the body and debug it, etc. (Avoid returning it to the user to prevent leaking information).\n"}
+,{"stream_name":"stdout","time":3262.567140228,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567142007,"data":" {* ../../docs_src/handling_errors/tutorial005.py hl[14] *}\n"}
+,{"stream_name":"stdout","time":3262.567143811,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567145514,"data":"@@ -218,11 +218,7 @@ You will receive a response telling you that the data is invalid containing the\n"}
+,{"stream_name":"stdout","time":3262.567147468,"data":"       \"msg\": \"value is not a valid integer\",\n"}
+,{"stream_name":"stdout","time":3262.567149564,"data":"       \"type\": \"type_error.integer\"\n"}
+,{"stream_name":"stdout","time":3262.567151533,"data":"     }\n"}
+,{"stream_name":"stdout","time":3262.567153238,"data":"-  ],\n"}
+,{"stream_name":"stdout","time":3262.567155017,"data":"-  \"body\": {\n"}
+,{"stream_name":"stdout","time":3262.567156895,"data":"-    \"title\": \"towel\",\n"}
+,{"stream_name":"stdout","time":3262.567158723,"data":"-    \"size\": \"XL\"\n"}
+,{"stream_name":"stdout","time":3262.567160939,"data":"-  }\n"}
+,{"stream_name":"stdout","time":3262.567162664,"data":"+  ]\n"}
+,{"stream_name":"stdout","time":3262.567164332,"data":" }\n"}
+,{"stream_name":"stdout","time":3262.56716601,"data":" ```\n"}
+,{"stream_name":"stdout","time":3262.567167656,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567169322,"data":"diff --git a/docs_src/custom_request_and_route/tutorial002.py b/docs_src/custom_request_and_route/tutorial002.py\n"}
+,{"stream_name":"stdout","time":3262.567171185,"data":"index cee4a95f..119013c4 100644\n"}
+,{"stream_name":"stdout","time":3262.567173889,"data":"--- a/docs_src/custom_request_and_route/tutorial002.py\n"}
+,{"stream_name":"stdout","time":3262.567175824,"data":"+++ b/docs_src/custom_request_and_route/tutorial002.py\n"}
+,{"stream_name":"stdout","time":3262.567177618,"data":"@@ -14,8 +14,8 @@ class ValidationErrorLoggingRoute(APIRoute):\n"}
+,{"stream_name":"stdout","time":3262.567179495,"data":"                 return await original_route_handler(request)\n"}
+,{"stream_name":"stdout","time":3262.567181282,"data":"             except RequestValidationError as exc:\n"}
+,{"stream_name":"stdout","time":3262.567183014,"data":"                 body = await request.body()\n"}
+,{"stream_name":"stdout","time":3262.567184779,"data":"-                detail = {\"errors\": exc.errors(), \"body\": body.decode()}\n"}
+,{"stream_name":"stdout","time":3262.567186907,"data":"-                raise HTTPException(status_code=422, detail=detail)\n"}
+,{"stream_name":"stdout","time":3262.567191699,"data":"+                print(f\"Request body: {body.decode()}\")\n"}
+,{"stream_name":"stdout","time":3262.567193768,"data":"+                raise HTTPException(status_code=422, detail=exc.errors())\n"}
+,{"stream_name":"stdout","time":3262.567195643,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567197277,"data":"         return custom_route_handler\n"}
+,{"stream_name":"stdout","time":3262.567199226,"data":" \n"}
+,{"stream_name":"stdout","time":3262.567200904,"data":"diff --git a/docs_src/custom_request_and_route/tutorial002_an.py b/docs_src/custom_request_and_route/tutorial002_an.py\n"}
+,{"stream_name":"stdout","time":3262.567202814,"data":"index 127f7a9c..81247a0a 100644\n"}
+,{"stream_name":"stdout","time":3262.567204524,"data":"--- a/docs_src/custom_request_and_route/tutorial002_an.py\n"}
+,{"stream_name":"stdout","time":3262.567206276,"data":"+++ b/docs_src/custom_request_and_route/tutorial002_an.py\n"}
+,{"stream_name":"stdout","time":3262.567208104,"data":"@@ -15,8 +15,8 @@ class ValidationErrorLoggingRoute(APIRoute):\n"}
+,{"stream_name":"stdout","time":3262.56720989,"data":"                 return await original_route_handler(request)\n"}
+,{"stream_name":"stdout","time":3262.567211668,"data":"             except RequestValidationError as exc:\n"}
+,{"stream_name":"stdout","time":3262.567213447,"data":"                 body = await request.body()\n"}
+,{"stream_name":"stdout","time":3262.567215195,"data":"-      \n"}
+,{"stream_name":"stdout","time":3262.567216886,"data":"PATCH_END fastapi_14487\n"}
+,{"stream_name":"stdout","time":3262.567218644,"data":"[12/36] Evaluating rich_3535 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":3392.339912505,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 750aec99-0db, creating venv without pip: Command '['/tmp/swegemma_sandbox_750aec99-0db_b0li4pzw/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3392.339949102,"data":"\n"}
+,{"stream_name":"stderr","time":3392.339952969,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 750aec99-0db, creating venv without pip: Command '['/tmp/swegemma_sandbox_750aec99-0db_b0li4pzw/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3394.722558599,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 683eccb1-c68, creating venv without pip: Command '['/tmp/swegemma_sandbox_683eccb1-c68_d1b30mkd/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3394.722584444,"data":"\n"}
+,{"stream_name":"stderr","time":3394.722587788,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 683eccb1-c68, creating venv without pip: Command '['/tmp/swegemma_sandbox_683eccb1-c68_d1b30mkd/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":3394.796226486,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=464, tool_calls=7, duration=132.2s\n"}
+,{"stream_name":"stdout","time":3394.796249223,"data":"TRACE_BEGIN rich_3535\n"}
+,{"stream_name":"stdout","time":3394.79625248,"data":"TRACE_END rich_3535\n"}
+,{"stream_name":"stdout","time":3394.796254946,"data":"PATCH_BEGIN rich_3535\n"}
+,{"stream_name":"stdout","time":3394.796257383,"data":"diff --git a/rich/cells.py b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":3394.796259902,"data":"index f85f928f..5fb07e6b 100644\n"}
+,{"stream_name":"stdout","time":3394.79627217,"data":"--- a/rich/cells.py\n"}
+,{"stream_name":"stdout","time":3394.796274123,"data":"+++ b/rich/cells.py\n"}
+,{"stream_name":"stdout","time":3394.796275897,"data":"@@ -7,7 +7,7 @@ from typing import Callable\n"}
+,{"stream_name":"stdout","time":3394.796277673,"data":" from ._cell_widths import CELL_WIDTHS\n"}
+,{"stream_name":"stdout","time":3394.796279623,"data":" \n"}
+,{"stream_name":"stdout","time":3394.796281325,"data":" # Regex to match sequence of the most common character ranges\n"}
+,{"stream_name":"stdout","time":3394.79628321,"data":"-_is_single_cell_widths = re.compile(\"^[\\u0020-\\u006f\\u00a0\\u02ff\\u0370-\\u0482]*$\").match\n"}
+,{"stream_name":"stdout","time":3394.796285919,"data":"+_is_single_cell_widths = re.compile(\"^[\\u0020-\\u007e\\u00a0\\u02ff\\u0370-\\u0482]*$\").match\n"}
+,{"stream_name":"stdout","time":3394.796288132,"data":" \n"}
+,{"stream_name":"stdout","time":3394.796289811,"data":" \n"}
+,{"stream_name":"stdout","time":3394.796291453,"data":" @lru_cache(4096)\n"}
+,{"stream_name":"stdout","time":3394.796293181,"data":"PATCH_END rich_3535\n"}
+,{"stream_name":"stdout","time":3394.796295099,"data":"[13/36] Evaluating rich_3944 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":3544.821569535,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 41feddb7-d29, creating venv without pip: Command '['/tmp/swegemma_sandbox_41feddb7-d29_9u9av_9v/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3544.821600379,"data":"\n"}
+,{"stream_name":"stderr","time":3544.821604185,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 41feddb7-d29, creating venv without pip: Command '['/tmp/swegemma_sandbox_41feddb7-d29_9u9av_9v/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3547.260554938,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox dc9b2f3f-a23, creating venv without pip: Command '['/tmp/swegemma_sandbox_dc9b2f3f-a23_4wg5lvri/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3547.260582079,"data":"\n"}
+,{"stream_name":"stderr","time":3547.260585476,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox dc9b2f3f-a23, creating venv without pip: Command '['/tmp/swegemma_sandbox_dc9b2f3f-a23_4wg5lvri/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":3547.335078716,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1477, tool_calls=11, duration=152.5s\n"}
+,{"stream_name":"stdout","time":3547.335093668,"data":"TRACE_BEGIN rich_3944\n"}
+,{"stream_name":"stdout","time":3547.335096424,"data":"TRACE_END rich_3944\n"}
+,{"stream_name":"stdout","time":3547.335098895,"data":"PATCH_BEGIN rich_3944\n"}
+,{"stream_name":"stdout","time":3547.335101384,"data":"diff --git a/rich/_export_format.py b/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":3547.335103879,"data":"index e7527e52..d6d16002 100644\n"}
+,{"stream_name":"stdout","time":3547.335106308,"data":"--- a/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":3547.335108775,"data":"+++ b/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":3547.335111114,"data":"@@ -25,16 +25,16 @@ CONSOLE_SVG_FORMAT = \"\"\"\\\n"}
+,{"stream_name":"stdout","time":3547.33511364,"data":"     @font-face {{\n"}
+,{"stream_name":"stdout","time":3547.33511596,"data":"         font-family: \"Fira Code\";\n"}
+,{"stream_name":"stdout","time":3547.335118494,"data":"         src: local(\"FiraCode-Regular\"),\n"}
+,{"stream_name":"stdout","time":3547.335132354,"data":"-                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2\") format(\"woff2\"),\n"}
+,{"stream_name":"stdout","time":3547.335134792,"data":"-                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff\") format(\"woff\");\n"}
+,{"stream_name":"stdout","time":3547.335136914,"data":"+                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.1/woff2/FiraCode-Regular.woff2\") format(\"woff2\"),\n"}
+,{"stream_name":"stdout","time":3547.335138922,"data":"+                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.1/woff/FiraCode-Regular.woff\") format(\"woff\");\n"}
+,{"stream_name":"stdout","time":3547.335140925,"data":"         font-style: normal;\n"}
+,{"stream_name":"stdout","time":3547.335142727,"data":"         font-weight: 400;\n"}
+,{"stream_name":"stdout","time":3547.335144438,"data":"     }}\n"}
+,{"stream_name":"stdout","time":3547.335146139,"data":"     @font-face {{\n"}
+,{"stream_name":"stdout","time":3547.335148049,"data":"         font-family: \"Fira Code\";\n"}
+,{"stream_name":"stdout","time":3547.335150034,"data":"         src: local(\"FiraCode-Bold\"),\n"}
+,{"stream_name":"stdout","time":3547.335151914,"data":"-                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2\") format(\"woff2\"),\n"}
+,{"stream_name":"stdout","time":3547.335153949,"data":"-                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff\") format(\"woff\");\n"}
+,{"stream_name":"stdout","time":3547.335155904,"data":"+                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.1/woff2/FiraCode-Bold.woff2\") format(\"woff2\"),\n"}
+,{"stream_name":"stdout","time":3547.335157899,"data":"+                url(\"https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.1/woff/FiraCode-Bold.woff\") format(\"woff\");\n"}
+,{"stream_name":"stdout","time":3547.335159873,"data":"         font-style: bold;\n"}
+,{"stream_name":"stdout","time":3547.335161582,"data":"         font-weight: 700;\n"}
+,{"stream_name":"stdout","time":3547.335163342,"data":"     }}\n"}
+,{"stream_name":"stdout","time":3547.335165131,"data":"PATCH_END rich_3944\n"}
+,{"stream_name":"stdout","time":3547.335166902,"data":"[14/36] Evaluating fastapi_14301 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":3596.609639015,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2d31db89-13d, creating venv without pip: Command '['/tmp/swegemma_sandbox_2d31db89-13d_0pwd9ruq/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3596.609666544,"data":"\n"}
+,{"stream_name":"stderr","time":3596.609670337,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2d31db89-13d, creating venv without pip: Command '['/tmp/swegemma_sandbox_2d31db89-13d_0pwd9ruq/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3599.864992328,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 0b41fa91-b69, creating venv without pip: Command '['/tmp/swegemma_sandbox_0b41fa91-b69_4kiklsdz/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3599.865020282,"data":"\n"}
+,{"stream_name":"stderr","time":3599.865024148,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 0b41fa91-b69, creating venv without pip: Command '['/tmp/swegemma_sandbox_0b41fa91-b69_4kiklsdz/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":3599.934604142,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=613, tool_calls=7, duration=52.5s\n"}
+,{"stream_name":"stdout","time":3599.934632473,"data":"TRACE_BEGIN fastapi_14301\n"}
+,{"stream_name":"stdout","time":3599.934635708,"data":"TRACE_END fastapi_14301\n"}
+,{"stream_name":"stdout","time":3599.934637767,"data":"PATCH_BEGIN fastapi_14301\n"}
+,{"stream_name":"stdout","time":3599.934639773,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3599.93464173,"data":"index c5c6b69b..f71e84ee 100644\n"}
+,{"stream_name":"stdout","time":3599.934643602,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3599.934645594,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3599.934647398,"data":"@@ -129,7 +129,7 @@ def get_parameterless_sub_dependant(*, depends: params.Depends, path: str) -\u003e De\n"}
+,{"stream_name":"stdout","time":3599.93464993,"data":"     if isinstance(depends, params.Security) and depends.scopes:\n"}
+,{"stream_name":"stdout","time":3599.934651899,"data":"         use_security_scopes.extend(depends.scopes)\n"}
+,{"stream_name":"stdout","time":3599.93465377,"data":"     return get_dependant(\n"}
+,{"stream_name":"stdout","time":3599.934655623,"data":"-        path=path, call=depends.dependency, security_scopes=use_security_scopes\n"}
+,{"stream_name":"stdout","time":3599.934657513,"data":"+        path=path, call=depends.dependency, security_scopes=use_security_scopes, scope=depends.scope\n"}
+,{"stream_name":"stdout","time":3599.934659413,"data":"     )\n"}
+,{"stream_name":"stdout","time":3599.934661116,"data":"PATCH_END fastapi_14301\n"}
+,{"stream_name":"stdout","time":3599.934662982,"data":"[15/36] Evaluating fastapi_9753 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":3805.458783045,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox aa3f9160-a27, creating venv without pip: Command '['/tmp/swegemma_sandbox_aa3f9160-a27_3crz0rjp/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3805.458813211,"data":"\n"}
+,{"stream_name":"stderr","time":3805.45881686,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox aa3f9160-a27, creating venv without pip: Command '['/tmp/swegemma_sandbox_aa3f9160-a27_3crz0rjp/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3808.634017231,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 399bcf45-9b2, creating venv without pip: Command '['/tmp/swegemma_sandbox_399bcf45-9b2_qkn30wad/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":3808.634045423,"data":"\n"}
+,{"stream_name":"stderr","time":3808.634049482,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 399bcf45-9b2, creating venv without pip: Command '['/tmp/swegemma_sandbox_399bcf45-9b2_qkn30wad/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":3808.707446683,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=1515, tool_calls=18, duration=208.7s\n"}
+,{"stream_name":"stdout","time":3808.707477449,"data":"TRACE_BEGIN fastapi_9753\n"}
+,{"stream_name":"stdout","time":3808.707483415,"data":"TRACE_END fastapi_9753\n"}
+,{"stream_name":"stdout","time":3808.707487702,"data":"PATCH_BEGIN fastapi_9753\n"}
+,{"stream_name":"stdout","time":3808.707491964,"data":"diff --git a/fastapi/dependencies/models.py b/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":3808.707507376,"data":"index 13486dd1..0eeb0516 100644\n"}
+,{"stream_name":"stdout","time":3808.707509919,"data":"--- a/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":3808.70751181,"data":"+++ b/fastapi/dependencies/models.py\n"}
+,{"stream_name":"stdout","time":3808.707513736,"data":"@@ -1,7 +1,7 @@\n"}
+,{"stream_name":"stdout","time":3808.707515508,"data":" import inspect\n"}
+,{"stream_name":"stdout","time":3808.707517343,"data":" import sys\n"}
+,{"stream_name":"stdout","time":3808.707519074,"data":" from dataclasses import dataclass, field\n"}
+,{"stream_name":"stdout","time":3808.70752088,"data":"-from functools import cached_property\n"}
+,{"stream_name":"stdout","time":3808.707522757,"data":"+from functools import cached_property, partial\n"}
+,{"stream_name":"stdout","time":3808.707524677,"data":" from typing import Any, Callable, List, Optional, Sequence, Union\n"}
+,{"stream_name":"stdout","time":3808.707526606,"data":" \n"}
+,{"stream_name":"stdout","time":3808.707528305,"data":" from fastapi._compat import ModelField\n"}
+,{"stream_name":"stdout","time":3808.707530086,"data":"@@ -79,7 +79,10 @@ class Dependant:\n"}
+,{"stream_name":"stdout","time":3808.707531926,"data":"     def _unwrapped_call(self) -\u003e Any:\n"}
+,{"stream_name":"stdout","time":3808.707533809,"data":"         if self.call is None:\n"}
+,{"stream_name":"stdout","time":3808.707535552,"data":"             return self.call  # pragma: no cover\n"}
+,{"stream_name":"stdout","time":3808.707537429,"data":"-        return inspect.unwrap(self.call)\n"}
+,{"stream_name":"stdout","time":3808.707539307,"data":"+        call = self.call\n"}
+,{"stream_name":"stdout","time":3808.707541064,"data":"+        while isinstance(call, partial):\n"}
+,{"stream_name":"stdout","time":3808.70754287,"data":"+            call = call.func\n"}
+,{"stream_name":"stdout","time":3808.707544628,"data":"+        return inspect.unwrap(call)\n"}
+,{"stream_name":"stdout","time":3808.707546417,"data":" \n"}
+,{"stream_name":"stdout","time":3808.707548091,"data":"     @cached_property\n"}
+,{"stream_name":"stdout","time":3808.707549831,"data":"     def is_gen_callable(self) -\u003e bool:\n"}
+,{"stream_name":"stdout","time":3808.707551749,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3808.707553637,"data":"index 1a493a9f..098f63f8 100644\n"}
+,{"stream_name":"stdout","time":3808.707555427,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3808.707557186,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":3808.707558955,"data":"@@ -273,7 +273,7 @@ def get_dependant(\n"}
+,{"stream_name":"stdout","time":3808.707560763,"data":"             ):\n"}
+,{"stream_name":"stdout","time":3808.707562475,"data":"                 assert dependant.call\n"}
+,{"stream_name":"stdout","time":3808.70756422,"data":"                 raise DependencyScopeError(\n"}
+,{"stream_name":"stdout","time":3808.707566117,"data":"-                    f'The dependency \"{dependant.call.__name__}\" has a scope of '\n"}
+,{"stream_name":"stdout","time":3808.707568131,"data":"+                    f'The dependency \"{dependant._unwrapped_call.__name__}\" has a scope of '\n"}
+,{"stream_name":"stdout","time":3808.707570155,"data":"                     '\"request\", it cannot depend on dependencies with scope \"function\".'\n"}
+,{"stream_name":"stdout","time":3808.707572196,"data":"                 )\n"}
+,{"stream_name":"stdout","time":3808.707573905,"data":"             sub_own_oauth_scopes: List[str] = []\n"}
+,{"stream_name":"stdout","time":3808.707578226,"data":"PATCH_END fastapi_9753\n"}
+,{"stream_name":"stdout","time":3808.707580085,"data":"[16/36] Evaluating fastapi_13537 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":4029.059131427,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 80ddbab4-b52, creating venv without pip: Command '['/tmp/swegemma_sandbox_80ddbab4-b52_28p0mmo5/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4029.059162679,"data":"\n"}
+,{"stream_name":"stderr","time":4029.059166392,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 80ddbab4-b52, creating venv without pip: Command '['/tmp/swegemma_sandbox_80ddbab4-b52_28p0mmo5/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4032.182889082,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 4bd74d66-56b, creating venv without pip: Command '['/tmp/swegemma_sandbox_4bd74d66-56b_fm18lem2/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4032.182915812,"data":"\n"}
+,{"stream_name":"stderr","time":4032.182918986,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 4bd74d66-56b, creating venv without pip: Command '['/tmp/swegemma_sandbox_4bd74d66-56b_fm18lem2/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":4032.253388106,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=823, tool_calls=10, duration=223.5s\n"}
+,{"stream_name":"stdout","time":4032.253406948,"data":"TRACE_BEGIN fastapi_13537\n"}
+,{"stream_name":"stdout","time":4032.253410047,"data":"TRACE_END fastapi_13537\n"}
+,{"stream_name":"stdout","time":4032.2534124,"data":"PATCH_BEGIN fastapi_13537\n"}
+,{"stream_name":"stdout","time":4032.25341504,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":4032.253417615,"data":"index d43fa8a5..9f554e7d 100644\n"}
+,{"stream_name":"stdout","time":4032.253420071,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":4032.253422843,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":4032.253425178,"data":"@@ -871,6 +871,7 @@ async def _extract_form_body(\n"}
+,{"stream_name":"stdout","time":4032.253427613,"data":"     received_body: FormData,\n"}
+,{"stream_name":"stdout","time":4032.253430066,"data":" ) -\u003e Dict[str, Any]:\n"}
+,{"stream_name":"stdout","time":4032.253432589,"data":"     values = {}\n"}
+,{"stream_name":"stdout","time":4032.253434977,"data":"+    processed_keys = set()\n"}
+,{"stream_name":"stdout","time":4032.25343731,"data":" \n"}
+,{"stream_name":"stdout","time":4032.253439569,"data":"     for field in body_fields:\n"}
+,{"stream_name":"stdout","time":4032.253441931,"data":"         value = _get_multidict_value(field, received_body)\n"}
+,{"stream_name":"stdout","time":4032.253444348,"data":"@@ -902,8 +903,9 @@ async def _extract_form_body(\n"}
+,{"stream_name":"stdout","time":4032.253446811,"data":"             value = serialize_sequence_value(field=field, value=results)\n"}
+,{"stream_name":"stdout","time":4032.25344934,"data":"         if value is not None:\n"}
+,{"stream_name":"stdout","time":4032.253451691,"data":"             values[field.alias] = value\n"}
+,{"stream_name":"stdout","time":4032.253454038,"data":"+        processed_keys.add(field.alias)\n"}
+,{"stream_name":"stdout","time":4032.253456363,"data":"     for key, value in received_body.items():\n"}
+,{"stream_name":"stdout","time":4032.253468384,"data":"-        if key not in values:\n"}
+,{"stream_name":"stdout","time":4032.253470427,"data":"+        if key not in processed_keys:\n"}
+,{"stream_name":"stdout","time":4032.253472208,"data":"             values[key] = value\n"}
+,{"stream_name":"stdout","time":4032.253473975,"data":"     return values\n"}
+,{"stream_name":"stdout","time":4032.253475794,"data":"PATCH_END fastapi_13537\n"}
+,{"stream_name":"stdout","time":4032.253477538,"data":"[17/36] Evaluating rich_3772 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":4245.532604898,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox df9b035b-dee, creating venv without pip: Command '['/tmp/swegemma_sandbox_df9b035b-dee__nkmgecq/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4245.532644269,"data":"\n"}
+,{"stream_name":"stderr","time":4245.532649983,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox df9b035b-dee, creating venv without pip: Command '['/tmp/swegemma_sandbox_df9b035b-dee__nkmgecq/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4547.018758346,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cbc8cd84-2aa, creating venv without pip: Command '['/tmp/swegemma_sandbox_cbc8cd84-2aa_3w3ie_zn/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4547.018792163,"data":"\n"}
+,{"stream_name":"stderr","time":4547.018795863,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cbc8cd84-2aa, creating venv without pip: Command '['/tmp/swegemma_sandbox_cbc8cd84-2aa_3w3ie_zn/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":4547.070761517,"data":"  -\u003e resolved=False, exit_code=124, patch_chars=2419, tool_calls=25, duration=514.8s\n"}
+,{"stream_name":"stdout","time":4547.070782955,"data":"TRACE_BEGIN rich_3772\n"}
+,{"stream_name":"stdout","time":4547.070786514,"data":"TRACE_END rich_3772\n"}
+,{"stream_name":"stdout","time":4547.070789238,"data":"PATCH_BEGIN rich_3772\n"}
+,{"stream_name":"stdout","time":4547.070791894,"data":"diff --git a/rich/traceback.py b/rich/traceback.py\n"}
+,{"stream_name":"stdout","time":4547.070794604,"data":"index b2cc6304..29ebffd0 100644\n"}
+,{"stream_name":"stdout","time":4547.070797241,"data":"--- a/rich/traceback.py\n"}
+,{"stream_name":"stdout","time":4547.070799613,"data":"+++ b/rich/traceback.py\n"}
+,{"stream_name":"stdout","time":4547.07080205,"data":"@@ -123,6 +123,7 @@ def install(\n"}
+,{"stream_name":"stdout","time":4547.0708045,"data":" \n"}
+,{"stream_name":"stdout","time":4547.070806867,"data":"     \"\"\"\n"}
+,{"stream_name":"stdout","time":4547.070809301,"data":"     traceback_console = Console(stderr=True) if console is None else console\n"}
+,{"stream_name":"stdout","time":4547.070811789,"data":"+    old_excepthook = sys.excepthook\n"}
+,{"stream_name":"stdout","time":4547.070814126,"data":" \n"}
+,{"stream_name":"stdout","time":4547.070816507,"data":"     locals_hide_sunder = (\n"}
+,{"stream_name":"stdout","time":4547.070818861,"data":"         True\n"}
+,{"stream_name":"stdout","time":4547.070821163,"data":"@@ -135,25 +136,28 @@ def install(\n"}
+,{"stream_name":"stdout","time":4547.07082352,"data":"         value: BaseException,\n"}
+,{"stream_name":"stdout","time":4547.070825954,"data":"         traceback: Optional[TracebackType],\n"}
+,{"stream_name":"stdout","time":4547.070838547,"data":"     ) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4547.070840682,"data":"-        exception_traceback = Traceback.from_exception(\n"}
+,{"stream_name":"stdout","time":4547.070842492,"data":"-            type_,\n"}
+,{"stream_name":"stdout","time":4547.070844248,"data":"-            value,\n"}
+,{"stream_name":"stdout","time":4547.070846018,"data":"-            traceback,\n"}
+,{"stream_name":"stdout","time":4547.070847733,"data":"-            width=width,\n"}
+,{"stream_name":"stdout","time":4547.070849533,"data":"-            code_width=code_width,\n"}
+,{"stream_name":"stdout","time":4547.070851342,"data":"-            extra_lines=extra_lines,\n"}
+,{"stream_name":"stdout","time":4547.070853104,"data":"-            theme=theme,\n"}
+,{"stream_name":"stdout","time":4547.07085482,"data":"-            word_wrap=word_wrap,\n"}
+,{"stream_name":"stdout","time":4547.070856532,"data":"-            show_locals=show_locals,\n"}
+,{"stream_name":"stdout","time":4547.070858421,"data":"-            locals_max_length=locals_max_length,\n"}
+,{"stream_name":"stdout","time":4547.070860162,"data":"-            locals_max_string=locals_max_string,\n"}
+,{"stream_name":"stdout","time":4547.070861921,"data":"-            locals_hide_dunder=locals_hide_dunder,\n"}
+,{"stream_name":"stdout","time":4547.070863684,"data":"-            locals_hide_sunder=bool(locals_hide_sunder),\n"}
+,{"stream_name":"stdout","time":4547.070865556,"data":"-            indent_guides=indent_guides,\n"}
+,{"stream_name":"stdout","time":4547.070867298,"data":"-            suppress=suppress,\n"}
+,{"stream_name":"stdout","time":4547.070869017,"data":"-            max_frames=max_frames,\n"}
+,{"stream_name":"stdout","time":4547.070870744,"data":"-        )\n"}
+,{"stream_name":"stdout","time":4547.070872652,"data":"-        traceback_console.print(exception_traceback)\n"}
+,{"stream_name":"stdout","time":4547.070874435,"data":"+        try:\n"}
+,{"stream_name":"stdout","time":4547.070876198,"data":"+            exception_traceback = Traceback.from_exception(\n"}
+,{"stream_name":"stdout","time":4547.070878046,"data":"+                type_,\n"}
+,{"stream_name":"stdout","time":4547.070879832,"data":"+                value,\n"}
+,{"stream_name":"stdout","time":4547.070881553,"data":"+                traceback,\n"}
+,{"stream_name":"stdout","time":4547.070883269,"data":"+                width=width,\n"}
+,{"stream_name":"stdout","time":4547.070885008,"data":"+                code_width=code_width,\n"}
+,{"stream_name":"stdout","time":4547.070886819,"data":"+                extra_lines=extra_lines,\n"}
+,{"stream_name":"stdout","time":4547.070888605,"data":"+                theme=theme,\n"}
+,{"stream_name":"stdout","time":4547.07089031,"data":"+                word_wrap=word_wrap,\n"}
+,{"stream_name":"stdout","time":4547.070892041,"data":"+                show_locals=show_locals,\n"}
+,{"stream_name":"stdout","time":4547.070893786,"data":"+                locals_max_length=locals_max_length,\n"}
+,{"stream_name":"stdout","time":4547.070895528,"data":"+                locals_max_string=locals_max_string,\n"}
+,{"stream_name":"stdout","time":4547.070897805,"data":"+                locals_hide_dunder=locals_hide_dunder,\n"}
+,{"stream_name":"stdout","time":4547.070899578,"data":"+                locals_hide_sunder=bool(locals_hide_sunder),\n"}
+,{"stream_name":"stdout","time":4547.070901449,"data":"+                indent_guides=indent_guides,\n"}
+,{"stream_name":"stdout","time":4547.070903206,"data":"+                suppress=suppress,\n"}
+,{"stream_name":"stdout","time":4547.070904969,"data":"+                max_frames=max_frames,\n"}
+,{"stream_name":"stdout","time":4547.070910761,"data":"+            )\n"}
+,{"stream_name":"stdout","time":4547.070912674,"data":"+            traceback_console.print(exception_traceback)\n"}
+,{"stream_name":"stdout","time":4547.070914549,"data":"+        except Exception:\n"}
+,{"stream_name":"stdout","time":4547.070916267,"data":"+            old_excepthook(type_, value, traceback)\n"}
+,{"stream_name":"stdout","time":4547.070918033,"data":" \n"}
+,{"stream_name":"stdout","time":4547.070919766,"data":"     def ipy_excepthook_closure(ip: Any) -\u003e None:  # pragma: no cover\n"}
+,{"stream_name":"stdout","time":4547.070921848,"data":"         tb_data = {}  # store information about showtraceback call\n"}
+,{"stream_name":"stdout","time":4547.070923709,"data":"@@ -203,7 +207,6 @@ def install(\n"}
+,{"stream_name":"stdout","time":4547.070925495,"data":"         return sys.excepthook\n"}
+,{"stream_name":"stdout","time":4547.07092725,"data":"     except Exception:\n"}
+,{"stream_name":"stdout","time":4547.070928958,"data":"         # otherwise use default system hook\n"}
+,{"stream_name":"stdout","time":4547.070930696,"data":"-        old_excepthook = sys.excepthook\n"}
+,{"stream_name":"stdout","time":4547.070932423,"data":"         sys.excepthook = excepthook\n"}
+,{"stream_name":"stdout","time":4547.070934232,"data":"         return old_excepthook\n"}
+,{"stream_name":"stdout","time":4547.070940104,"data":"PATCH_END rich_3772\n"}
+,{"stream_name":"stdout","time":4547.070941929,"data":"[18/36] Evaluating fastapi_14306 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":4764.678204956,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 0d703d11-7fb, creating venv without pip: Command '['/tmp/swegemma_sandbox_0d703d11-7fb_t9hh8qa0/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4764.678237225,"data":"\n"}
+,{"stream_name":"stderr","time":4764.67824069,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 0d703d11-7fb, creating venv without pip: Command '['/tmp/swegemma_sandbox_0d703d11-7fb_t9hh8qa0/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4767.917886868,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 09ef91b9-fca, creating venv without pip: Command '['/tmp/swegemma_sandbox_09ef91b9-fca_cmce2kb4/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4767.917913747,"data":"\n"}
+,{"stream_name":"stderr","time":4767.917917456,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 09ef91b9-fca, creating venv without pip: Command '['/tmp/swegemma_sandbox_09ef91b9-fca_cmce2kb4/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":4767.990597895,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=2034, tool_calls=30, duration=220.8s\n"}
+,{"stream_name":"stdout","time":4767.990622374,"data":"TRACE_BEGIN fastapi_14306\n"}
+,{"stream_name":"stdout","time":4767.990625622,"data":"TRACE_END fastapi_14306\n"}
+,{"stream_name":"stdout","time":4767.990628205,"data":"PATCH_BEGIN fastapi_14306\n"}
+,{"stream_name":"stdout","time":4767.990630697,"data":"diff --git a/fastapi/exceptions.py b/fastapi/exceptions.py\n"}
+,{"stream_name":"stdout","time":4767.990633305,"data":"index 0620428b..0e295432 100644\n"}
+,{"stream_name":"stdout","time":4767.990635654,"data":"--- a/fastapi/exceptions.py\n"}
+,{"stream_name":"stdout","time":4767.990638015,"data":"+++ b/fastapi/exceptions.py\n"}
+,{"stream_name":"stdout","time":4767.99065094,"data":"@@ -155,30 +155,35 @@ class DependencyScopeError(FastAPIError):\n"}
+,{"stream_name":"stdout","time":4767.990653047,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990654765,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990656588,"data":" class ValidationException(Exception):\n"}
+,{"stream_name":"stdout","time":4767.990658473,"data":"-    def __init__(self, errors: Sequence[Any]) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990660404,"data":"+    def __init__(self, errors: Sequence[Any], *, endpoint_context: Optional[str] = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.99066239,"data":"         self._errors = errors\n"}
+,{"stream_name":"stdout","time":4767.990664244,"data":"+        self.endpoint_context = endpoint_context\n"}
+,{"stream_name":"stdout","time":4767.990666108,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990667816,"data":"     def errors(self) -\u003e Sequence[Any]:\n"}
+,{"stream_name":"stdout","time":4767.99066969,"data":"         return self._errors\n"}
+,{"stream_name":"stdout","time":4767.990671555,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990673231,"data":"+    def __str__(self) -\u003e str:\n"}
+,{"stream_name":"stdout","time":4767.990675083,"data":"+        message = f\"{len(self._errors)} validation errors:\\n\"\n"}
+,{"stream_name":"stdout","time":4767.990677075,"data":"+        for err in self._errors:\n"}
+,{"stream_name":"stdout","time":4767.990678954,"data":"+            message += f\"  {err}\\n\"\n"}
+,{"stream_name":"stdout","time":4767.990680922,"data":"+        if self.endpoint_context:\n"}
+,{"stream_name":"stdout","time":4767.990682723,"data":"+            message += f\"\\n{self.endpoint_context}\\n\"\n"}
+,{"stream_name":"stdout","time":4767.990684714,"data":"+        return message\n"}
+,{"stream_name":"stdout","time":4767.99068658,"data":"+\n"}
+,{"stream_name":"stdout","time":4767.990688282,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990689949,"data":" class RequestValidationError(ValidationException):\n"}
+,{"stream_name":"stdout","time":4767.990691769,"data":"-    def __init__(self, errors: Sequence[Any], *, body: Any = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990693714,"data":"-        super().__init__(errors)\n"}
+,{"stream_name":"stdout","time":4767.990695583,"data":"+    def __init__(self, errors: Sequence[Any], *, body: Any = None, endpoint_context: Optional[str] = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990710967,"data":"+        super().__init__(errors, endpoint_context=endpoint_context)\n"}
+,{"stream_name":"stdout","time":4767.990714194,"data":"         self.body = body\n"}
+,{"stream_name":"stdout","time":4767.990716045,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990717743,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990719417,"data":" class WebSocketRequestValidationError(ValidationException):\n"}
+,{"stream_name":"stdout","time":4767.990721274,"data":"-    pass\n"}
+,{"stream_name":"stdout","time":4767.990723083,"data":"+    def __init__(self, errors: Sequence[Any], *, endpoint_context: Optional[str] = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990725066,"data":"+        super().__init__(errors, endpoint_context=endpoint_context)\n"}
+,{"stream_name":"stdout","time":4767.990726953,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990728633,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990730326,"data":" class ResponseValidationError(ValidationException):\n"}
+,{"stream_name":"stdout","time":4767.990732124,"data":"-    def __init__(self, errors: Sequence[Any], *, body: Any = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990737208,"data":"-        super().__init__(errors)\n"}
+,{"stream_name":"stdout","time":4767.990739122,"data":"+    def __init__(self, errors: Sequence[Any], *, body: Any = None, endpoint_context: Optional[str] = None) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4767.990741091,"data":"+        super().__init__(errors, endpoint_context=endpoint_context)\n"}
+,{"stream_name":"stdout","time":4767.990742922,"data":"         self.body = body\n"}
+,{"stream_name":"stdout","time":4767.990744737,"data":" \n"}
+,{"stream_name":"stdout","time":4767.990746401,"data":"-    def __str__(self) -\u003e str:\n"}
+,{"stream_name":"stdout","time":4767.990749066,"data":"-        message = f\"{len(self._errors)} validation errors:\\n\"\n"}
+,{"stream_name":"stdout","time":4767.990751497,"data":"-        for err in self._errors:\n"}
+,{"stream_name":"stdout","time":4767.9907535,"data":"-            message += f\"  {err}\\n\"\n"}
+,{"stream_name":"stdout","time":4767.990755303,"data":"-        return message\n"}
+,{"stream_name":"stdout","time":4767.990757162,"data":"PATCH_END fastapi_14306\n"}
+,{"stream_name":"stdout","time":4767.990758903,"data":"[19/36] Evaluating fastapi_15800 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":4978.241380854,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3dd2553f-d20, creating venv without pip: Command '['/tmp/swegemma_sandbox_3dd2553f-d20_gztejpzx/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4978.241412863,"data":"\n"}
+,{"stream_name":"stderr","time":4978.241416494,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3dd2553f-d20, creating venv without pip: Command '['/tmp/swegemma_sandbox_3dd2553f-d20_gztejpzx/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4982.464739703,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 7d8785dd-b62, creating venv without pip: Command '['/tmp/swegemma_sandbox_7d8785dd-b62_c38o_87k/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4982.464765194,"data":"\n"}
+,{"stream_name":"stderr","time":4982.464768756,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 7d8785dd-b62, creating venv without pip: Command '['/tmp/swegemma_sandbox_7d8785dd-b62_c38o_87k/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":4982.540326579,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1962, tool_calls=30, duration=214.4s\n"}
+,{"stream_name":"stdout","time":4982.540348561,"data":"TRACE_BEGIN fastapi_15800\n"}
+,{"stream_name":"stdout","time":4982.540351875,"data":"TRACE_END fastapi_15800\n"}
+,{"stream_name":"stdout","time":4982.540354417,"data":"PATCH_BEGIN fastapi_15800\n"}
+,{"stream_name":"stdout","time":4982.540357025,"data":"diff --git a/fastapi/applications.py b/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":4982.540359534,"data":"index c7c551e4e..4c647e067 100644\n"}
+,{"stream_name":"stdout","time":4982.540361948,"data":"--- a/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":4982.540364373,"data":"+++ b/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":4982.540366681,"data":"@@ -1,4 +1,5 @@\n"}
+,{"stream_name":"stdout","time":4982.540369006,"data":" from collections.abc import Awaitable, Callable, Coroutine, Sequence\n"}
+,{"stream_name":"stdout","time":4982.540371524,"data":"+from fastapi.staticfiles import StaticFiles\n"}
+,{"stream_name":"stdout","time":4982.540373905,"data":" from enum import Enum\n"}
+,{"stream_name":"stdout","time":4982.540384865,"data":" from typing import Annotated, Any, TypeVar\n"}
+,{"stream_name":"stdout","time":4982.540386985,"data":" \n"}
+,{"stream_name":"stdout","time":4982.540388826,"data":"@@ -1161,6 +1162,20 @@ class FastAPI(Starlette):\n"}
+,{"stream_name":"stdout","time":4982.540390643,"data":"             scope[\"root_path\"] = self.root_path\n"}
+,{"stream_name":"stdout","time":4982.540392547,"data":"         await super().__call__(scope, receive, send)\n"}
+,{"stream_name":"stdout","time":4982.540394358,"data":" \n"}
+,{"stream_name":"stdout","time":4982.540396146,"data":"+    def frontend(\n"}
+,{"stream_name":"stdout","time":4982.540397883,"data":"+        self,\n"}
+,{"stream_name":"stdout","time":4982.540399884,"data":"+        path: str,\n"}
+,{"stream_name":"stdout","time":4982.540401655,"data":"+        directory: str,\n"}
+,{"stream_name":"stdout","time":4982.540403442,"data":"+    ) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4982.5404053,"data":"+        \"\"\"\n"}
+,{"stream_name":"stdout","time":4982.540407218,"data":"+        Mount a static files directory to serve as the frontend.\n"}
+,{"stream_name":"stdout","time":4982.540409123,"data":"+\n"}
+,{"stream_name":"stdout","time":4982.540410765,"data":"+        Args:\n"}
+,{"stream_name":"stdout","time":4982.540412502,"data":"+            path: The path to mount the frontend at.\n"}
+,{"stream_name":"stdout","time":4982.54041452,"data":"+            directory: The directory containing the static files.\n"}
+,{"stream_name":"stdout","time":4982.5404164,"data":"+        \"\"\"\n"}
+,{"stream_name":"stdout","time":4982.540418256,"data":"+        self.mount(path, StaticFiles(directory=directory), name=\"frontend\")\n"}
+,{"stream_name":"stdout","time":4982.540420245,"data":"+\n"}
+,{"stream_name":"stdout","time":4982.540421993,"data":"     def add_api_route(\n"}
+,{"stream_name":"stdout","time":4982.540423725,"data":"         self,\n"}
+,{"stream_name":"stdout","time":4982.540425405,"data":"         path: str,\n"}
+,{"stream_name":"stdout","time":4982.540427135,"data":"diff --git a/fastapi/routing.py b/fastapi/routing.py\n"}
+,{"stream_name":"stdout","time":4982.540429073,"data":"index 4a55fda8a..58638873c 100644\n"}
+,{"stream_name":"stdout","time":4982.540430875,"data":"--- a/fastapi/routing.py\n"}
+,{"stream_name":"stdout","time":4982.540432594,"data":"+++ b/fastapi/routing.py\n"}
+,{"stream_name":"stdout","time":4982.540434344,"data":"@@ -1,4 +1,5 @@\n"}
+,{"stream_name":"stdout","time":4982.540436052,"data":" import contextlib\n"}
+,{"stream_name":"stdout","time":4982.540437789,"data":"+from fastapi.staticfiles import StaticFiles\n"}
+,{"stream_name":"stdout","time":4982.540439551,"data":" import copy\n"}
+,{"stream_name":"stdout","time":4982.540441275,"data":" import email.message\n"}
+,{"stream_name":"stdout","time":4982.540443105,"data":" import functools\n"}
+,{"stream_name":"stdout","time":4982.540445282,"data":"@@ -2093,6 +2094,20 @@ class APIRouter(routing.Router):\n"}
+,{"stream_name":"stdout","time":4982.540447124,"data":"         super().add_websocket_route(path, endpoint, name=name)\n"}
+,{"stream_name":"stdout","time":4982.54044899,"data":"         self._mark_routes_changed()\n"}
+,{"stream_name":"stdout","time":4982.540450738,"data":" \n"}
+,{"stream_name":"stdout","time":4982.540452413,"data":"+    def frontend(\n"}
+,{"stream_name":"stdout","time":4982.54045412,"data":"+        self,\n"}
+,{"stream_name":"stdout","time":4982.540455813,"data":"+        path: str,\n"}
+,{"stream_name":"stdout","time":4982.540457622,"data":"+        directory: str,\n"}
+,{"stream_name":"stdout","time":4982.54046183,"data":"+    ) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4982.540463731,"data":"+        \"\"\"\n"}
+,{"stream_name":"stdout","time":4982.540465562,"data":"+        Mount a static files directory to serve as the frontend.\n"}
+,{"stream_name":"stdout","time":4982.540467465,"data":"+\n"}
+,{"stream_name":"stdout","time":4982.540469143,"data":"+        Args:\n"}
+,{"stream_name":"stdout","time":4982.540470835,"data":"+            path: The path to mount the frontend at.\n"}
+,{"stream_name":"stdout","time":4982.540472671,"data":"+            directory: The directory containing the static files.\n"}
+,{"stream_name":"stdout","time":4982.540474619,"data":"+        \"\"\"\n"}
+,{"stream_name":"stdout","time":4982.540476419,"data":"+        self.mount(path, StaticFiles(directory=directory), name=\"frontend\")\n"}
+,{"stream_name":"stdout","time":4982.540478381,"data":"+\n"}
+,{"stream_name":"stdout","time":4982.540480114,"data":"     async def handle(self, scope: Scope, receive: Receive, send: Send) -\u003e None:\n"}
+,{"stream_name":"stdout","time":4982.540482812,"data":"         included_router = _get_scope_included_router(scope)\n"}
+,{"stream_name":"stdout","time":4982.540484866,"data":"         if (\n"}
+,{"stream_name":"stdout","time":4982.540486666,"data":"PATCH_END fastapi_15800\n"}
+,{"stream_name":"stdout","time":4982.540488465,"data":"[20/36] Evaluating fastapi_11194 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":5286.825596886,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_11194 agent timed out.\n"}
+,{"stream_name":"stderr","time":5286.825633653,"data":"\n"}
+,{"stream_name":"stderr","time":5286.825637286,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_11194 agent timed out.\n"}
+,{"stream_name":"stderr","time":5286.847667348,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_11194 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":5286.847688768,"data":"\n"}
+,{"stream_name":"stderr","time":5286.847692265,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_11194 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":5287.072425212,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 4c6c18e6-751, creating venv without pip: Command '['/tmp/swegemma_sandbox_4c6c18e6-751_67v1h6p_/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5287.072451118,"data":"\n"}
+,{"stream_name":"stderr","time":5287.072454474,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 4c6c18e6-751, creating venv without pip: Command '['/tmp/swegemma_sandbox_4c6c18e6-751_67v1h6p_/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":5287.144834726,"data":"  -\u003e resolved=False, exit_code=-1, patch_chars=0, tool_calls=27, duration=304.6s\n"}
+,{"stream_name":"stdout","time":5287.144863413,"data":"TRACE_BEGIN fastapi_11194\n"}
+,{"stream_name":"stdout","time":5287.144868791,"data":"TRACE_END fastapi_11194\n"}
+,{"stream_name":"stdout","time":5287.144872717,"data":"PATCH_BEGIN fastapi_11194\n"}
+,{"stream_name":"stdout","time":5287.144877016,"data":"\n"}
+,{"stream_name":"stdout","time":5287.144880948,"data":"PATCH_END fastapi_11194\n"}
+,{"stream_name":"stdout","time":5287.14488482,"data":"[21/36] Evaluating rich_3043 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":5384.393070344,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cebc62fb-d8a, creating venv without pip: Command '['/tmp/swegemma_sandbox_cebc62fb-d8a_foff5tyk/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5384.39311826,"data":"\n"}
+,{"stream_name":"stderr","time":5384.393123546,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cebc62fb-d8a, creating venv without pip: Command '['/tmp/swegemma_sandbox_cebc62fb-d8a_foff5tyk/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5386.904122116,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 49be46b1-0fd, creating venv without pip: Command '['/tmp/swegemma_sandbox_49be46b1-0fd_7us3jxb9/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5386.904147813,"data":"\n"}
+,{"stream_name":"stderr","time":5386.904150782,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 49be46b1-0fd, creating venv without pip: Command '['/tmp/swegemma_sandbox_49be46b1-0fd_7us3jxb9/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":5386.977646827,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=448, tool_calls=10, duration=99.8s\n"}
+,{"stream_name":"stdout","time":5386.977669767,"data":"TRACE_BEGIN rich_3043\n"}
+,{"stream_name":"stdout","time":5386.977672926,"data":"TRACE_END rich_3043\n"}
+,{"stream_name":"stdout","time":5386.977674993,"data":"PATCH_BEGIN rich_3043\n"}
+,{"stream_name":"stdout","time":5386.977676879,"data":"diff --git a/rich/_export_format.py b/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":5386.977678882,"data":"index 094d2dc2..998a9b0d 100644\n"}
+,{"stream_name":"stdout","time":5386.97768081,"data":"--- a/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":5386.97768257,"data":"+++ b/rich/_export_format.py\n"}
+,{"stream_name":"stdout","time":5386.977684387,"data":"@@ -1,5 +1,6 @@\n"}
+,{"stream_name":"stdout","time":5386.977686146,"data":" CONSOLE_HTML_FORMAT = \"\"\"\\\n"}
+,{"stream_name":"stdout","time":5386.977688303,"data":" \u003c!DOCTYPE html\u003e\n"}
+,{"stream_name":"stdout","time":5386.977690197,"data":"+\u003chtml\u003e\n"}
+,{"stream_name":"stdout","time":5386.977692007,"data":" \u003chead\u003e\n"}
+,{"stream_name":"stdout","time":5386.977693749,"data":" \u003cmeta charset=\"UTF-8\"\u003e\n"}
+,{"stream_name":"stdout","time":5386.977715533,"data":" \u003cstyle\u003e\n"}
+,{"stream_name":"stdout","time":5386.977718047,"data":"@@ -10,7 +11,6 @@ body {{\n"}
+,{"stream_name":"stdout","time":5386.97771986,"data":" }}\n"}
+,{"stream_name":"stdout","time":5386.977721705,"data":" \u003c/style\u003e\n"}
+,{"stream_name":"stdout","time":5386.977723594,"data":" \u003c/head\u003e\n"}
+,{"stream_name":"stdout","time":5386.977725359,"data":"-\u003chtml\u003e\n"}
+,{"stream_name":"stdout","time":5386.977727222,"data":" \u003cbody\u003e\n"}
+,{"stream_name":"stdout","time":5386.977729105,"data":"     \u003cpre style=\"font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace\"\u003e\u003ccode\u003e{code}\u003c/code\u003e\u003c/pre\u003e\n"}
+,{"stream_name":"stdout","time":5386.977731542,"data":" \u003c/body\u003e\n"}
+,{"stream_name":"stdout","time":5386.977733384,"data":"PATCH_END rich_3043\n"}
+,{"stream_name":"stdout","time":5386.977735187,"data":"[22/36] Evaluating rich_3675 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":5507.671315895,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 33d46761-fca, creating venv without pip: Command '['/tmp/swegemma_sandbox_33d46761-fca_pe1snbqd/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5507.671365986,"data":"\n"}
+,{"stream_name":"stderr","time":5507.671370646,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 33d46761-fca, creating venv without pip: Command '['/tmp/swegemma_sandbox_33d46761-fca_pe1snbqd/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5510.89341296,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox af7e8470-330, creating venv without pip: Command '['/tmp/swegemma_sandbox_af7e8470-330_qf9flmpx/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5510.89343681,"data":"\n"}
+,{"stream_name":"stderr","time":5510.893439824,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox af7e8470-330, creating venv without pip: Command '['/tmp/swegemma_sandbox_af7e8470-330_qf9flmpx/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":5510.967079322,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=720, tool_calls=10, duration=124.0s\n"}
+,{"stream_name":"stdout","time":5510.967102869,"data":"TRACE_BEGIN rich_3675\n"}
+,{"stream_name":"stdout","time":5510.9671058,"data":"TRACE_END rich_3675\n"}
+,{"stream_name":"stdout","time":5510.96710779,"data":"PATCH_BEGIN rich_3675\n"}
+,{"stream_name":"stdout","time":5510.967109713,"data":"diff --git a/rich/console.py b/rich/console.py\n"}
+,{"stream_name":"stdout","time":5510.967111722,"data":"index 3ec9a8aa..a4ca6697 100644\n"}
+,{"stream_name":"stdout","time":5510.967113619,"data":"--- a/rich/console.py\n"}
+,{"stream_name":"stdout","time":5510.96711535,"data":"+++ b/rich/console.py\n"}
+,{"stream_name":"stdout","time":5510.967117106,"data":"@@ -948,9 +948,10 @@ class Console:\n"}
+,{"stream_name":"stdout","time":5510.967119055,"data":"             # return False for Jupyter, which may have FORCE_COLOR set\n"}
+,{"stream_name":"stdout","time":5510.96712103,"data":"             return False\n"}
+,{"stream_name":"stdout","time":5510.967122793,"data":" \n"}
+,{"stream_name":"stdout","time":5510.967124955,"data":"-        # If FORCE_COLOR env var has any value at all, we assume a terminal.\n"}
+,{"stream_name":"stdout","time":5510.967126875,"data":"+        # If FORCE_COLOR or TTY_COMPATIBLE env var has any value at all, we assume a terminal.\n"}
+,{"stream_name":"stdout","time":5510.96712898,"data":"         force_color = self._environ.get(\"FORCE_COLOR\")\n"}
+,{"stream_name":"stdout","time":5510.967130933,"data":"-        if force_color is not None:\n"}
+,{"stream_name":"stdout","time":5510.967132723,"data":"+        tty_compatible = self._environ.get(\"TTY_COMPATIBLE\")\n"}
+,{"stream_name":"stdout","time":5510.967134801,"data":"+        if force_color is not None or tty_compatible is not None:\n"}
+,{"stream_name":"stdout","time":5510.967136677,"data":"             self._force_terminal = True\n"}
+,{"stream_name":"stdout","time":5510.967138516,"data":"             return True\n"}
+,{"stream_name":"stdout","time":5510.967140316,"data":"PATCH_END rich_3675\n"}
+,{"stream_name":"stdout","time":5510.967142085,"data":"[23/36] Evaluating rich_3518 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":5633.141739518,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox c5626caf-1a7, creating venv without pip: Command '['/tmp/swegemma_sandbox_c5626caf-1a7_2w8ybjdo/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5633.141778011,"data":"\n"}
+,{"stream_name":"stderr","time":5633.14178115,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox c5626caf-1a7, creating venv without pip: Command '['/tmp/swegemma_sandbox_c5626caf-1a7_2w8ybjdo/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5635.551534406,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 9a624bf8-833, creating venv without pip: Command '['/tmp/swegemma_sandbox_9a624bf8-833_qyk_woh6/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5635.551561889,"data":"\n"}
+,{"stream_name":"stderr","time":5635.551564781,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 9a624bf8-833, creating venv without pip: Command '['/tmp/swegemma_sandbox_9a624bf8-833_qyk_woh6/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":5635.626139365,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=528, tool_calls=16, duration=124.6s\n"}
+,{"stream_name":"stdout","time":5635.626166157,"data":"TRACE_BEGIN rich_3518\n"}
+,{"stream_name":"stdout","time":5635.626168933,"data":"TRACE_END rich_3518\n"}
+,{"stream_name":"stdout","time":5635.62617085,"data":"PATCH_BEGIN rich_3518\n"}
+,{"stream_name":"stdout","time":5635.626172793,"data":"diff --git a/rich/table.py b/rich/table.py\n"}
+,{"stream_name":"stdout","time":5635.626174825,"data":"index 10af2e6f..7b1fa9e4 100644\n"}
+,{"stream_name":"stdout","time":5635.626176671,"data":"--- a/rich/table.py\n"}
+,{"stream_name":"stdout","time":5635.626178416,"data":"+++ b/rich/table.py\n"}
+,{"stream_name":"stdout","time":5635.626180232,"data":"@@ -451,7 +451,7 @@ class Table(JupyterMixin):\n"}
+,{"stream_name":"stdout","time":5635.626182067,"data":"             ]\n"}
+,{"stream_name":"stdout","time":5635.626183822,"data":"         for index, renderable in enumerate(cell_renderables):\n"}
+,{"stream_name":"stdout","time":5635.626185713,"data":"             if index == len(columns):\n"}
+,{"stream_name":"stdout","time":5635.62618765,"data":"-                column = Column(_index=index)\n"}
+,{"stream_name":"stdout","time":5635.626189499,"data":"+                column = Column(_index=index, highlight=self.highlight)\n"}
+,{"stream_name":"stdout","time":5635.626191418,"data":"                 for _ in self.rows:\n"}
+,{"stream_name":"stdout","time":5635.626193352,"data":"                     add_cell(column, Text(\"\"))\n"}
+,{"stream_name":"stdout","time":5635.626195395,"data":"                 self.columns.append(column)\n"}
+,{"stream_name":"stdout","time":5635.626197202,"data":"PATCH_END rich_3518\n"}
+,{"stream_name":"stdout","time":5635.62619894,"data":"[24/36] Evaluating fastapi_15661 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":5942.394057996,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15661 agent timed out.\n"}
+,{"stream_name":"stderr","time":5942.394089741,"data":"\n"}
+,{"stream_name":"stderr","time":5942.394093399,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15661 agent timed out.\n"}
+,{"stream_name":"stderr","time":5942.635552142,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox ca662181-45e, creating venv without pip: Command '['/tmp/swegemma_sandbox_ca662181-45e_aeec_098/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5942.635579916,"data":"\n"}
+,{"stream_name":"stderr","time":5942.635583594,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox ca662181-45e, creating venv without pip: Command '['/tmp/swegemma_sandbox_ca662181-45e_aeec_098/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5945.737498297,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox d92413c7-664, creating venv without pip: Command '['/tmp/swegemma_sandbox_d92413c7-664_xv7g8sjv/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":5945.7375261,"data":"\n"}
+,{"stream_name":"stderr","time":5945.737530057,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox d92413c7-664, creating venv without pip: Command '['/tmp/swegemma_sandbox_d92413c7-664_xv7g8sjv/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":5945.811228759,"data":"  -\u003e resolved=False, exit_code=2, patch_chars=2957, tool_calls=23, duration=310.1s\n"}
+,{"stream_name":"stdout","time":5945.811249948,"data":"TRACE_BEGIN fastapi_15661\n"}
+,{"stream_name":"stdout","time":5945.811252777,"data":"TRACE_END fastapi_15661\n"}
+,{"stream_name":"stdout","time":5945.811255081,"data":"PATCH_BEGIN fastapi_15661\n"}
+,{"stream_name":"stdout","time":5945.811257108,"data":"diff --git a/docs/en/docs/release-notes.md b/docs/en/docs/release-notes.md\n"}
+,{"stream_name":"stdout","time":5945.811259089,"data":"index 88302fa06..17c27d747 100644\n"}
+,{"stream_name":"stdout","time":5945.811260951,"data":"--- a/docs/en/docs/release-notes.md\n"}
+,{"stream_name":"stdout","time":5945.811262905,"data":"+++ b/docs/en/docs/release-notes.md\n"}
+,{"stream_name":"stdout","time":5945.811264671,"data":"@@ -27,6 +27,10 @@ hide:\n"}
+,{"stream_name":"stdout","time":5945.811266477,"data":" * ⬆ Bump the python-packages group with 15 updates. PR [#15594](https://github.com/fastapi/fastapi/pull/15594) by [@dependabot[bot]](https://github.com/apps/dependabot).\n"}
+,{"stream_name":"stdout","time":5945.811269074,"data":" * 👷 Configure Dependabot to group updates and update weekly. PR [#15560](https://github.com/fastapi/fastapi/pull/15560) by [@YuriiMotov](https://github.com/YuriiMotov).\n"}
+,{"stream_name":"stdout","time":5945.811271202,"data":" \n"}
+,{"stream_name":"stdout","time":5945.811272904,"data":"+## 0.136.5 (2026-11-21)\n"}
+,{"stream_name":"stdout","time":5945.811274597,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811276305,"data":"+## 0.136.4 (2026-11-21)\n"}
+,{"stream_name":"stdout","time":5945.811278094,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811279746,"data":" ## 0.136.3 (2026-05-23)\n"}
+,{"stream_name":"stdout","time":5945.811281465,"data":" \n"}
+,{"stream_name":"stdout","time":5945.811283207,"data":" ### Refactors\n"}
+,{"stream_name":"stdout","time":5945.811285004,"data":"diff --git a/fastapi/__init__.py b/fastapi/__init__.py\n"}
+,{"stream_name":"stdout","time":5945.81128679,"data":"index 38e747232..1e32e5fcc 100644\n"}
+,{"stream_name":"stdout","time":5945.811288558,"data":"--- a/fastapi/__init__.py\n"}
+,{"stream_name":"stdout","time":5945.811290364,"data":"+++ b/fastapi/__init__.py\n"}
+,{"stream_name":"stdout","time":5945.811292161,"data":"@@ -1,6 +1,6 @@\n"}
+,{"stream_name":"stdout","time":5945.811293945,"data":" \"\"\"FastAPI framework, high performance, easy to learn, fast to code, ready for production\"\"\"\n"}
+,{"stream_name":"stdout","time":5945.811295968,"data":" \n"}
+,{"stream_name":"stdout","time":5945.811297686,"data":"-__version__ = \"0.136.3\"\n"}
+,{"stream_name":"stdout","time":5945.811299494,"data":"+__version__ = \"0.136.5\"\n"}
+,{"stream_name":"stdout","time":5945.811309542,"data":" \n"}
+,{"stream_name":"stdout","time":5945.811311396,"data":" from starlette import status as status\n"}
+,{"stream_name":"stdout","time":5945.811313257,"data":" \n"}
+,{"stream_name":"stdout","time":5945.811314911,"data":"diff --git a/scripts/release.py b/scripts/release.py\n"}
+,{"stream_name":"stdout","time":5945.811316734,"data":"new file mode 100644\n"}
+,{"stream_name":"stdout","time":5945.811318465,"data":"index 000000000..eedd1ca84\n"}
+,{"stream_name":"stdout","time":5945.811320206,"data":"--- /dev/null\n"}
+,{"stream_name":"stdout","time":5945.811322416,"data":"+++ b/scripts/release.py\n"}
+,{"stream_name":"stdout","time":5945.811324143,"data":"@@ -0,0 +1,59 @@\n"}
+,{"stream_name":"stdout","time":5945.811325874,"data":"+\"\"\"Prepare for a new release.\"\"\"\n"}
+,{"stream_name":"stdout","time":5945.811327877,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811329519,"data":"+import argparse\n"}
+,{"stream_name":"stdout","time":5945.811331206,"data":"+import re\n"}
+,{"stream_name":"stdout","time":5945.811332926,"data":"+import subprocess\n"}
+,{"stream_name":"stdout","time":5945.811334708,"data":"+import sys\n"}
+,{"stream_name":"stdout","time":5945.811336397,"data":"+from pathlib import Path\n"}
+,{"stream_name":"stdout","time":5945.811338116,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811339745,"data":"+VERSION_FILE = Path(\"fastapi/__init__.py\")\n"}
+,{"stream_name":"stdout","time":5945.81134177,"data":"+RELEASE_NOTES_FILE = Path(\"docs/en/docs/release-notes.md\")\n"}
+,{"stream_name":"stdout","time":5945.811343628,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811345271,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811346928,"data":"+def update_version(version: str) -\u003e None:\n"}
+,{"stream_name":"stdout","time":5945.811348903,"data":"+    content = VERSION_FILE.read_text()\n"}
+,{"stream_name":"stdout","time":5945.811350698,"data":"+    new_content = re.sub(r'__version__ = \".*\"', f'__version__ = \"{version}\"', content)\n"}
+,{"stream_name":"stdout","time":5945.811352751,"data":"+    VERSION_FILE.write_text(new_content)\n"}
+,{"stream_name":"stdout","time":5945.811354511,"data":"+    print(f\"Updated version to {version} in {VERSION_FILE}\")\n"}
+,{"stream_name":"stdout","time":5945.81135646,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811358117,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811359765,"data":"+def add_release_header(version: str) -\u003e None:\n"}
+,{"stream_name":"stdout","time":5945.811361645,"data":"+    content = RELEASE_NOTES_FILE.read_text()\n"}
+,{"stream_name":"stdout","time":5945.811363421,"data":"+    if f\"## {version}\" in content:\n"}
+,{"stream_name":"stdout","time":5945.811365294,"data":"+        print(f\"Release header for {version} already exists in {RELEASE_NOTES_FILE}\")\n"}
+,{"stream_name":"stdout","time":5945.811368272,"data":"+        return\n"}
+,{"stream_name":"stdout","time":5945.811370022,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.81137172,"data":"+    lines = content.splitlines()\n"}
+,{"stream_name":"stdout","time":5945.811373504,"data":"+    insert_pos = -1\n"}
+,{"stream_name":"stdout","time":5945.811375217,"data":"+    for i, line in enumerate(lines):\n"}
+,{"stream_name":"stdout","time":5945.811376998,"data":"+        if re.match(r\"^## \\d+\\.\\d+\\.\\d+\", line):\n"}
+,{"stream_name":"stdout","time":5945.811379154,"data":"+            insert_pos = i\n"}
+,{"stream_name":"stdout","time":5945.811380904,"data":"+            break\n"}
+,{"stream_name":"stdout","time":5945.811382599,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811384234,"data":"+    if insert_pos != -1:\n"}
+,{"stream_name":"stdout","time":5945.811388348,"data":"+        lines.insert(insert_pos, f\"## {version}\")\n"}
+,{"stream_name":"stdout","time":5945.811390411,"data":"+        lines.insert(insert_pos + 1, \"\")\n"}
+,{"stream_name":"stdout","time":5945.811392247,"data":"+    else:\n"}
+,{"stream_name":"stdout","time":5945.811393949,"data":"+        lines.append(\"\")\n"}
+,{"stream_name":"stdout","time":5945.811395735,"data":"+        lines.append(f\"## {version}\")\n"}
+,{"stream_name":"stdout","time":5945.81139756,"data":"+        lines.append(\"\")\n"}
+,{"stream_name":"stdout","time":5945.811399298,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811400953,"data":"+    RELEASE_NOTES_FILE.write_text(\"\\n\".join(lines) + \"\\n\")\n"}
+,{"stream_name":"stdout","time":5945.811403057,"data":"+    print(f\"Added release header for {version} to {RELEASE_NOTES_FILE}\")\n"}
+,{"stream_name":"stdout","time":5945.811404971,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811406607,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811408248,"data":"+def main() -\u003e None:\n"}
+,{"stream_name":"stdout","time":5945.811410081,"data":"+    parser = argparse.ArgumentParser(description=\"Prepare for a new release\")\n"}
+,{"stream_name":"stdout","time":5945.811411987,"data":"+    parser.add_argument(\"version\", help=\"The new version to set (e.g. 0.136.4)\")\n"}
+,{"stream_name":"stdout","time":5945.811413968,"data":"+    args = parser.parse_args()\n"}
+,{"stream_name":"stdout","time":5945.811415776,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811417489,"data":"+    update_version(args.version)\n"}
+,{"stream_name":"stdout","time":5945.811419258,"data":"+    add_release_header(args.version)\n"}
+,{"stream_name":"stdout","time":5945.811421051,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811422713,"data":"+    # Run the add_latest_release_date script\n"}
+,{"stream_name":"stdout","time":5945.811424496,"data":"+    subprocess.run([sys.executable, \"scripts/add_latest_release_date.py\"], check=True)\n"}
+,{"stream_name":"stdout","time":5945.811426378,"data":"+    print(\"Release preparation complete!\")\n"}
+,{"stream_name":"stdout","time":5945.811428216,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811429953,"data":"+\n"}
+,{"stream_name":"stdout","time":5945.811431729,"data":"+if __name__ == \"__main__\":\n"}
+,{"stream_name":"stdout","time":5945.811433518,"data":"+    main()\n"}
+,{"stream_name":"stdout","time":5945.811435299,"data":"PATCH_END fastapi_15661\n"}
+,{"stream_name":"stdout","time":5945.811437086,"data":"[25/36] Evaluating rich_3934 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":6248.7873238,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3934 agent timed out.\n"}
+,{"stream_name":"stderr","time":6248.787361951,"data":"\n"}
+,{"stream_name":"stderr","time":6248.787366619,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3934 agent timed out.\n"}
+,{"stream_name":"stderr","time":6248.787949482,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3934 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":6248.787970523,"data":"\n"}
+,{"stream_name":"stderr","time":6248.787974262,"data":"WARNING:swegemma.harness.agent_runner:Task rich_3934 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":6248.933779055,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 15d53f1d-9c9, creating venv without pip: Command '['/tmp/swegemma_sandbox_15d53f1d-9c9_ch407p0i/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6248.933809889,"data":"\n"}
+,{"stream_name":"stderr","time":6248.933812736,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 15d53f1d-9c9, creating venv without pip: Command '['/tmp/swegemma_sandbox_15d53f1d-9c9_ch407p0i/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":6249.004432955,"data":"  -\u003e resolved=False, exit_code=-1, patch_chars=0, tool_calls=11, duration=303.2s\n"}
+,{"stream_name":"stdout","time":6249.004451653,"data":"TRACE_BEGIN rich_3934\n"}
+,{"stream_name":"stdout","time":6249.004454267,"data":"TRACE_END rich_3934\n"}
+,{"stream_name":"stdout","time":6249.004456286,"data":"PATCH_BEGIN rich_3934\n"}
+,{"stream_name":"stdout","time":6249.004458158,"data":"\n"}
+,{"stream_name":"stdout","time":6249.004459961,"data":"PATCH_END rich_3934\n"}
+,{"stream_name":"stdout","time":6249.004461934,"data":"[26/36] Evaluating rich_3718 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":6358.171051014,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 293b3fa5-bef, creating venv without pip: Command '['/tmp/swegemma_sandbox_293b3fa5-bef_k90s28nl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6358.171084527,"data":"\n"}
+,{"stream_name":"stderr","time":6358.171088576,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 293b3fa5-bef, creating venv without pip: Command '['/tmp/swegemma_sandbox_293b3fa5-bef_k90s28nl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6360.513110982,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b34bb0fe-739, creating venv without pip: Command '['/tmp/swegemma_sandbox_b34bb0fe-739_jdmkjlci/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6360.513138396,"data":"\n"}
+,{"stream_name":"stderr","time":6360.51314184,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox b34bb0fe-739, creating venv without pip: Command '['/tmp/swegemma_sandbox_b34bb0fe-739_jdmkjlci/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":6360.586597083,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=766, tool_calls=11, duration=111.6s\n"}
+,{"stream_name":"stdout","time":6360.586619153,"data":"TRACE_BEGIN rich_3718\n"}
+,{"stream_name":"stdout","time":6360.58662264,"data":"TRACE_END rich_3718\n"}
+,{"stream_name":"stdout","time":6360.586625203,"data":"PATCH_BEGIN rich_3718\n"}
+,{"stream_name":"stdout","time":6360.58662792,"data":"diff --git a/rich/panel.py b/rich/panel.py\n"}
+,{"stream_name":"stdout","time":6360.586630465,"data":"index d411e291..11e07195 100644\n"}
+,{"stream_name":"stdout","time":6360.586632848,"data":"--- a/rich/panel.py\n"}
+,{"stream_name":"stdout","time":6360.586635247,"data":"+++ b/rich/panel.py\n"}
+,{"stream_name":"stdout","time":6360.586637802,"data":"@@ -206,7 +206,7 @@ class Panel(JupyterMixin):\n"}
+,{"stream_name":"stdout","time":6360.586640267,"data":" \n"}
+,{"stream_name":"stdout","time":6360.586642502,"data":"         title_text = self._title\n"}
+,{"stream_name":"stdout","time":6360.586645265,"data":"         if title_text is not None:\n"}
+,{"stream_name":"stdout","time":6360.58664919,"data":"-            title_text.stylize_before(partial_border_style)\n"}
+,{"stream_name":"stdout","time":6360.586653387,"data":"+            title_text.stylize_before(border_style)\n"}
+,{"stream_name":"stdout","time":6360.586668702,"data":" \n"}
+,{"stream_name":"stdout","time":6360.586672299,"data":"         child_width = (\n"}
+,{"stream_name":"stdout","time":6360.586675322,"data":"             width - 2\n"}
+,{"stream_name":"stdout","time":6360.586678433,"data":"@@ -255,7 +255,7 @@ class Panel(JupyterMixin):\n"}
+,{"stream_name":"stdout","time":6360.586681548,"data":" \n"}
+,{"stream_name":"stdout","time":6360.586684433,"data":"         subtitle_text = self._subtitle\n"}
+,{"stream_name":"stdout","time":6360.586687474,"data":"         if subtitle_text is not None:\n"}
+,{"stream_name":"stdout","time":6360.586690589,"data":"-            subtitle_text.stylize_before(partial_border_style)\n"}
+,{"stream_name":"stdout","time":6360.586692482,"data":"+            subtitle_text.stylize_before(border_style)\n"}
+,{"stream_name":"stdout","time":6360.586694355,"data":" \n"}
+,{"stream_name":"stdout","time":6360.586718445,"data":"         if subtitle_text is None or width \u003c= 4:\n"}
+,{"stream_name":"stdout","time":6360.586724808,"data":"             yield Segment(box.get_bottom([width - 2]), border_style)\n"}
+,{"stream_name":"stdout","time":6360.586728435,"data":"PATCH_END rich_3718\n"}
+,{"stream_name":"stdout","time":6360.586731758,"data":"[27/36] Evaluating fastapi_5624 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":6499.129173267,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 5d93f697-730, creating venv without pip: Command '['/tmp/swegemma_sandbox_5d93f697-730_pclgov0d/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6499.129213138,"data":"\n"}
+,{"stream_name":"stderr","time":6499.129217138,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 5d93f697-730, creating venv without pip: Command '['/tmp/swegemma_sandbox_5d93f697-730_pclgov0d/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6502.248824109,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox f3b47341-54d, creating venv without pip: Command '['/tmp/swegemma_sandbox_f3b47341-54d_w1ew0xbi/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6502.248850811,"data":"\n"}
+,{"stream_name":"stderr","time":6502.248854174,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox f3b47341-54d, creating venv without pip: Command '['/tmp/swegemma_sandbox_f3b47341-54d_w1ew0xbi/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":6502.32432505,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=725, tool_calls=8, duration=141.6s\n"}
+,{"stream_name":"stdout","time":6502.324347937,"data":"TRACE_BEGIN fastapi_5624\n"}
+,{"stream_name":"stdout","time":6502.324351624,"data":"TRACE_END fastapi_5624\n"}
+,{"stream_name":"stdout","time":6502.324354295,"data":"PATCH_BEGIN fastapi_5624\n"}
+,{"stream_name":"stdout","time":6502.324356872,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6502.324359463,"data":"index 1e92c1ba..6c2eb84f 100644\n"}
+,{"stream_name":"stdout","time":6502.324361843,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6502.324364183,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6502.324367077,"data":"@@ -275,7 +275,7 @@ def get_dependant(\n"}
+,{"stream_name":"stdout","time":6502.324369451,"data":"                     f'The dependency \"{dependant.call.__name__}\" has a scope of '\n"}
+,{"stream_name":"stdout","time":6502.32438249,"data":"                     '\"request\", it cannot depend on dependencies with scope \"function\".'\n"}
+,{"stream_name":"stdout","time":6502.324384918,"data":"                 )\n"}
+,{"stream_name":"stdout","time":6502.324386881,"data":"-            use_security_scopes = security_scopes or []\n"}
+,{"stream_name":"stdout","time":6502.324388738,"data":"+            use_security_scopes = list(security_scopes or [])\n"}
+,{"stream_name":"stdout","time":6502.32439067,"data":"             if isinstance(param_details.depends, params.Security):\n"}
+,{"stream_name":"stdout","time":6502.324392468,"data":"                 if param_details.depends.scopes:\n"}
+,{"stream_name":"stdout","time":6502.324394313,"data":"                     use_security_scopes.extend(param_details.depends.scopes)\n"}
+,{"stream_name":"stdout","time":6502.324396173,"data":"PATCH_END fastapi_5624\n"}
+,{"stream_name":"stdout","time":6502.324398183,"data":"[28/36] Evaluating fastapi_15280 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":6708.336484673,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 133334d8-703, creating venv without pip: Command '['/tmp/swegemma_sandbox_133334d8-703_ucrzfely/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6708.33652051,"data":"\n"}
+,{"stream_name":"stderr","time":6708.336524129,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 133334d8-703, creating venv without pip: Command '['/tmp/swegemma_sandbox_133334d8-703_ucrzfely/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6711.570750318,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 08847769-40c, creating venv without pip: Command '['/tmp/swegemma_sandbox_08847769-40c_6p88z02j/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6711.570781664,"data":"\n"}
+,{"stream_name":"stderr","time":6711.570785047,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 08847769-40c, creating venv without pip: Command '['/tmp/swegemma_sandbox_08847769-40c_6p88z02j/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":6711.644255473,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=0, tool_calls=30, duration=209.2s\n"}
+,{"stream_name":"stdout","time":6711.644278825,"data":"TRACE_BEGIN fastapi_15280\n"}
+,{"stream_name":"stdout","time":6711.644282249,"data":"TRACE_END fastapi_15280\n"}
+,{"stream_name":"stdout","time":6711.644284813,"data":"PATCH_BEGIN fastapi_15280\n"}
+,{"stream_name":"stdout","time":6711.644287255,"data":"\n"}
+,{"stream_name":"stdout","time":6711.644289539,"data":"PATCH_END fastapi_15280\n"}
+,{"stream_name":"stdout","time":6711.644291935,"data":"[29/36] Evaluating fastapi_14479 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":6801.879498842,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 629ca5e7-631, creating venv without pip: Command '['/tmp/swegemma_sandbox_629ca5e7-631_ffyspkr0/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6801.879533184,"data":"\n"}
+,{"stream_name":"stderr","time":6801.879536773,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 629ca5e7-631, creating venv without pip: Command '['/tmp/swegemma_sandbox_629ca5e7-631_ffyspkr0/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6805.357165315,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 87263494-615, creating venv without pip: Command '['/tmp/swegemma_sandbox_87263494-615_3g7jqwl4/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6805.357197585,"data":"\n"}
+,{"stream_name":"stderr","time":6805.357202084,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 87263494-615, creating venv without pip: Command '['/tmp/swegemma_sandbox_87263494-615_3g7jqwl4/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":6805.430641775,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=521, tool_calls=10, duration=93.7s\n"}
+,{"stream_name":"stdout","time":6805.430667553,"data":"TRACE_BEGIN fastapi_14479\n"}
+,{"stream_name":"stdout","time":6805.430671923,"data":"TRACE_END fastapi_14479\n"}
+,{"stream_name":"stdout","time":6805.430674919,"data":"PATCH_BEGIN fastapi_14479\n"}
+,{"stream_name":"stdout","time":6805.430678237,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6805.430680949,"data":"index 39d0bd89..5a19008c 100644\n"}
+,{"stream_name":"stdout","time":6805.430683397,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6805.430685291,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":6805.430687147,"data":"@@ -552,7 +552,7 @@ def analyze_param(\n"}
+,{"stream_name":"stdout","time":6805.430688919,"data":"                     # For Pydantic v1\n"}
+,{"stream_name":"stdout","time":6805.430690664,"data":"                     and getattr(field, \"shape\", 1) == 1\n"}
+,{"stream_name":"stdout","time":6805.430692718,"data":"                 )\n"}
+,{"stream_name":"stdout","time":6805.430694567,"data":"-            )\n"}
+,{"stream_name":"stdout","time":6805.430710386,"data":"+            ), f\"Query param {param_name!r} must be of one of the supported types\"\n"}
+,{"stream_name":"stdout","time":6805.430714328,"data":" \n"}
+,{"stream_name":"stdout","time":6805.430716169,"data":"     return ParamDetails(type_annotation=type_annotation, depends=depends, field=field)\n"}
+,{"stream_name":"stdout","time":6805.430718129,"data":"PATCH_END fastapi_14479\n"}
+,{"stream_name":"stdout","time":6805.430719902,"data":"[30/36] Evaluating fastapi_15588 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":7045.48877883,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 26ab573b-945, creating venv without pip: Command '['/tmp/swegemma_sandbox_26ab573b-945_xvhndlsl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7045.488809806,"data":"\n"}
+,{"stream_name":"stderr","time":7045.488813601,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 26ab573b-945, creating venv without pip: Command '['/tmp/swegemma_sandbox_26ab573b-945_xvhndlsl/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7049.666899343,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 732f9f4b-87e, creating venv without pip: Command '['/tmp/swegemma_sandbox_732f9f4b-87e_41ewb7c_/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7049.666926493,"data":"\n"}
+,{"stream_name":"stderr","time":7049.666929985,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 732f9f4b-87e, creating venv without pip: Command '['/tmp/swegemma_sandbox_732f9f4b-87e_41ewb7c_/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":7049.74157687,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1978, tool_calls=19, duration=244.2s\n"}
+,{"stream_name":"stdout","time":7049.741601659,"data":"TRACE_BEGIN fastapi_15588\n"}
+,{"stream_name":"stdout","time":7049.741604343,"data":"TRACE_END fastapi_15588\n"}
+,{"stream_name":"stdout","time":7049.741606346,"data":"PATCH_BEGIN fastapi_15588\n"}
+,{"stream_name":"stdout","time":7049.741608327,"data":"diff --git a/fastapi/sse.py b/fastapi/sse.py\n"}
+,{"stream_name":"stdout","time":7049.741610258,"data":"index 901d82496..69bf7fcea 100644\n"}
+,{"stream_name":"stdout","time":7049.741612091,"data":"--- a/fastapi/sse.py\n"}
+,{"stream_name":"stdout","time":7049.741613813,"data":"+++ b/fastapi/sse.py\n"}
+,{"stream_name":"stdout","time":7049.741615602,"data":"@@ -33,9 +33,18 @@ class EventSourceResponse(StreamingResponse):\n"}
+,{"stream_name":"stdout","time":7049.741617543,"data":"     media_type = \"text/event-stream\"\n"}
+,{"stream_name":"stdout","time":7049.741619468,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741621188,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741622918,"data":"-def _check_id_no_null(v: str | None) -\u003e str | None:\n"}
+,{"stream_name":"stdout","time":7049.741624816,"data":"-    if v is not None and \"\\0\" in v:\n"}
+,{"stream_name":"stdout","time":7049.741626733,"data":"-        raise ValueError(\"SSE 'id' must not contain null characters\")\n"}
+,{"stream_name":"stdout","time":7049.741628659,"data":"+def _check_id_no_null_or_newlines(v: str | None) -\u003e str | None:\n"}
+,{"stream_name":"stdout","time":7049.741630599,"data":"+    if v is not None:\n"}
+,{"stream_name":"stdout","time":7049.741632468,"data":"+        if \"\\0\" in v:\n"}
+,{"stream_name":"stdout","time":7049.741634291,"data":"+            raise ValueError(\"SSE 'id' must not contain null characters\")\n"}
+,{"stream_name":"stdout","time":7049.741636228,"data":"+        if \"\\n\" in v or \"\\r\" in v:\n"}
+,{"stream_name":"stdout","time":7049.741638224,"data":"+            raise ValueError(\"SSE 'id' must not contain newlines\")\n"}
+,{"stream_name":"stdout","time":7049.741640102,"data":"+    return v\n"}
+,{"stream_name":"stdout","time":7049.741641968,"data":"+\n"}
+,{"stream_name":"stdout","time":7049.7416437,"data":"+\n"}
+,{"stream_name":"stdout","time":7049.741645331,"data":"+def _check_event_no_newlines(v: str | None) -\u003e str | None:\n"}
+,{"stream_name":"stdout","time":7049.741647284,"data":"+    if v is not None and (\"\\n\" in v or \"\\r\" in v):\n"}
+,{"stream_name":"stdout","time":7049.741649233,"data":"+        raise ValueError(\"SSE 'event' must not contain newlines\")\n"}
+,{"stream_name":"stdout","time":7049.741651168,"data":"     return v\n"}
+,{"stream_name":"stdout","time":7049.741653271,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741654946,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741656562,"data":"@@ -86,6 +95,7 @@ class ServerSentEvent(BaseModel):\n"}
+,{"stream_name":"stdout","time":7049.741658366,"data":"     ] = None\n"}
+,{"stream_name":"stdout","time":7049.74166004,"data":"     event: Annotated[\n"}
+,{"stream_name":"stdout","time":7049.741661845,"data":"         str | None,\n"}
+,{"stream_name":"stdout","time":7049.741663587,"data":"+        AfterValidator(_check_event_no_newlines),\n"}
+,{"stream_name":"stdout","time":7049.741665388,"data":"         Doc(\n"}
+,{"stream_name":"stdout","time":7049.741667096,"data":"             \"\"\"\n"}
+,{"stream_name":"stdout","time":7049.741679211,"data":"             Optional event type name.\n"}
+,{"stream_name":"stdout","time":7049.741681218,"data":"@@ -97,7 +107,7 @@ class ServerSentEvent(BaseModel):\n"}
+,{"stream_name":"stdout","time":7049.741683001,"data":"     ] = None\n"}
+,{"stream_name":"stdout","time":7049.741684714,"data":"     id: Annotated[\n"}
+,{"stream_name":"stdout","time":7049.741686519,"data":"         str | None,\n"}
+,{"stream_name":"stdout","time":7049.741688292,"data":"-        AfterValidator(_check_id_no_null),\n"}
+,{"stream_name":"stdout","time":7049.741690052,"data":"+        AfterValidator(_check_id_no_null_or_newlines),\n"}
+,{"stream_name":"stdout","time":7049.741691868,"data":"         Doc(\n"}
+,{"stream_name":"stdout","time":7049.741693528,"data":"             \"\"\"\n"}
+,{"stream_name":"stdout","time":7049.741695328,"data":"             Optional event ID.\n"}
+,{"stream_name":"stdout","time":7049.741721565,"data":"@@ -197,6 +207,8 @@ def format_sse_event(\n"}
+,{"stream_name":"stdout","time":7049.741723684,"data":"             lines.append(f\": {line}\")\n"}
+,{"stream_name":"stdout","time":7049.741725553,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741727232,"data":"     if event is not None:\n"}
+,{"stream_name":"stdout","time":7049.741729047,"data":"+        if \"\\\\n\" in event or \"\\\\r\" in event:\n"}
+,{"stream_name":"stdout","time":7049.74173102,"data":"+            raise ValueError(\"SSE 'event' must not contain newlines\")\n"}
+,{"stream_name":"stdout","time":7049.741732908,"data":"         lines.append(f\"event: {event}\")\n"}
+,{"stream_name":"stdout","time":7049.741734777,"data":" \n"}
+,{"stream_name":"stdout","time":7049.741736388,"data":"     if data_str is not None:\n"}
+,{"stream_name":"stdout","time":7049.741738295,"data":"@@ -204,6 +216,8 @@ def format_sse_event(\n"}
+,{"stream_name":"stdout","time":7049.741740094,"data":"             lines.append(f\"data: {line}\")\n"}
+,{"stream_name":"stdout","time":7049.741741928,"data":" \n"}
+,{"stream_name":"stdout","time":7049.74174358,"data":"     if id is not None:\n"}
+,{"stream_name":"stdout","time":7049.741745347,"data":"+        if \"\\\\n\" in id or \"\\\\r\" in id:\n"}
+,{"stream_name":"stdout","time":7049.741748288,"data":"+            raise ValueError(\"SSE 'id' must not contain newlines\")\n"}
+,{"stream_name":"stdout","time":7049.741750305,"data":"         lines.append(f\"id: {id}\")\n"}
+,{"stream_name":"stdout","time":7049.741752144,"data":" \n"}
+,{"stream_name":"stdout","time":7049.74175389,"data":"     if retry is not None:\n"}
+,{"stream_name":"stdout","time":7049.741755648,"data":"PATCH_END fastapi_15588\n"}
+,{"stream_name":"stdout","time":7049.741757537,"data":"[31/36] Evaluating fastapi_15589 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":7354.903737848,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15589 agent timed out.\n"}
+,{"stream_name":"stderr","time":7354.903770584,"data":"\n"}
+,{"stream_name":"stderr","time":7354.903775188,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15589 agent timed out.\n"}
+,{"stream_name":"stderr","time":7354.925798253,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15589 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":7354.925821986,"data":"\n"}
+,{"stream_name":"stderr","time":7354.925825372,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_15589 completed without explicit submit_patch call and no working tree modifications.\n"}
+,{"stream_name":"stderr","time":7355.189603169,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a1c786b8-141, creating venv without pip: Command '['/tmp/swegemma_sandbox_a1c786b8-141_z_ceh3ry/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7355.189636469,"data":"\n"}
+,{"stream_name":"stderr","time":7355.189639632,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox a1c786b8-141, creating venv without pip: Command '['/tmp/swegemma_sandbox_a1c786b8-141_z_ceh3ry/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":7355.251062646,"data":"  -\u003e resolved=False, exit_code=-1, patch_chars=0, tool_calls=23, duration=305.5s\n"}
+,{"stream_name":"stdout","time":7355.251081107,"data":"TRACE_BEGIN fastapi_15589\n"}
+,{"stream_name":"stdout","time":7355.251083908,"data":"TRACE_END fastapi_15589\n"}
+,{"stream_name":"stdout","time":7355.251086691,"data":"PATCH_BEGIN fastapi_15589\n"}
+,{"stream_name":"stdout","time":7355.251088692,"data":"\n"}
+,{"stream_name":"stdout","time":7355.251090462,"data":"PATCH_END fastapi_15589\n"}
+,{"stream_name":"stdout","time":7355.251092365,"data":"[32/36] Evaluating fastapi_14419 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":7573.62591163,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 72f51d9c-9ba, creating venv without pip: Command '['/tmp/swegemma_sandbox_72f51d9c-9ba_latdi77s/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7573.625944014,"data":"\n"}
+,{"stream_name":"stderr","time":7573.625947936,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 72f51d9c-9ba, creating venv without pip: Command '['/tmp/swegemma_sandbox_72f51d9c-9ba_latdi77s/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7576.769802381,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2bd17bd6-c94, creating venv without pip: Command '['/tmp/swegemma_sandbox_2bd17bd6-c94_c_bpgc8k/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7576.76982882,"data":"\n"}
+,{"stream_name":"stderr","time":7576.769832389,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 2bd17bd6-c94, creating venv without pip: Command '['/tmp/swegemma_sandbox_2bd17bd6-c94_c_bpgc8k/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":7576.844195854,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=0, tool_calls=30, duration=221.5s\n"}
+,{"stream_name":"stdout","time":7576.844218011,"data":"TRACE_BEGIN fastapi_14419\n"}
+,{"stream_name":"stdout","time":7576.844221629,"data":"TRACE_END fastapi_14419\n"}
+,{"stream_name":"stdout","time":7576.844224388,"data":"PATCH_BEGIN fastapi_14419\n"}
+,{"stream_name":"stdout","time":7576.844226921,"data":"\n"}
+,{"stream_name":"stdout","time":7576.844229255,"data":"PATCH_END fastapi_14419\n"}
+,{"stream_name":"stdout","time":7576.844231678,"data":"[33/36] Evaluating fastapi_5077 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":7839.004320479,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_5077 agent exceeded turns budget.\n"}
+,{"stream_name":"stderr","time":7839.004351007,"data":"\n"}
+,{"stream_name":"stderr","time":7839.00435496,"data":"WARNING:swegemma.harness.agent_runner:Task fastapi_5077 agent exceeded turns budget.\n"}
+,{"stream_name":"stderr","time":7839.224475531,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 28b53c9c-a48, creating venv without pip: Command '['/tmp/swegemma_sandbox_28b53c9c-a48_bque7d_8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7839.224509492,"data":"\n"}
+,{"stream_name":"stderr","time":7839.22451231,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 28b53c9c-a48, creating venv without pip: Command '['/tmp/swegemma_sandbox_28b53c9c-a48_bque7d_8/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7842.436692921,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 6ac76502-e1e, creating venv without pip: Command '['/tmp/swegemma_sandbox_6ac76502-e1e_lkb5w513/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7842.436731706,"data":"\n"}
+,{"stream_name":"stderr","time":7842.436734774,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 6ac76502-e1e, creating venv without pip: Command '['/tmp/swegemma_sandbox_6ac76502-e1e_lkb5w513/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":7842.472580936,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=884, tool_calls=16, duration=265.5s\n"}
+,{"stream_name":"stdout","time":7842.472601364,"data":"TRACE_BEGIN fastapi_5077\n"}
+,{"stream_name":"stdout","time":7842.472604105,"data":"TRACE_END fastapi_5077\n"}
+,{"stream_name":"stdout","time":7842.472606016,"data":"PATCH_BEGIN fastapi_5077\n"}
+,{"stream_name":"stdout","time":7842.472607955,"data":"diff --git a/fastapi/dependencies/utils.py b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":7842.472610177,"data":"index ef3f5641..c175a1af 100644\n"}
+,{"stream_name":"stdout","time":7842.472612158,"data":"--- a/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":7842.472614119,"data":"+++ b/fastapi/dependencies/utils.py\n"}
+,{"stream_name":"stdout","time":7842.472616001,"data":"@@ -192,6 +192,8 @@ def get_flat_params(dependant: Dependant) -\u003e List[ModelField]:\n"}
+,{"stream_name":"stdout","time":7842.472618232,"data":" \n"}
+,{"stream_name":"stdout","time":7842.472620063,"data":" def get_typed_signature(call: Callable[..., Any]) -\u003e inspect.Signature:\n"}
+,{"stream_name":"stdout","time":7842.472622019,"data":"     signature = inspect.signature(call)\n"}
+,{"stream_name":"stdout","time":7842.47262385,"data":"+    while hasattr(call, \"__wrapped__\"):\n"}
+,{"stream_name":"stdout","time":7842.472625848,"data":"+        call = call.__wrapped__\n"}
+,{"stream_name":"stdout","time":7842.472627746,"data":"     globalns = getattr(call, \"__globals__\", {})\n"}
+,{"stream_name":"stdout","time":7842.472629747,"data":"     typed_params = [\n"}
+,{"stream_name":"stdout","time":7842.472631525,"data":"         inspect.Parameter(\n"}
+,{"stream_name":"stdout","time":7842.472633339,"data":"@@ -222,6 +224,8 @@ def get_typed_return_annotation(call: Callable[..., Any]) -\u003e Any:\n"}
+,{"stream_name":"stdout","time":7842.472635417,"data":"     if annotation is inspect.Signature.empty:\n"}
+,{"stream_name":"stdout","time":7842.472637245,"data":"         return None\n"}
+,{"stream_name":"stdout","time":7842.472639009,"data":" \n"}
+,{"stream_name":"stdout","time":7842.472640786,"data":"+    while hasattr(call, \"__wrapped__\"):\n"}
+,{"stream_name":"stdout","time":7842.472642739,"data":"+        call = call.__wrapped__\n"}
+,{"stream_name":"stdout","time":7842.472644526,"data":"     globalns = getattr(call, \"__globals__\", {})\n"}
+,{"stream_name":"stdout","time":7842.47264642,"data":"     return get_typed_annotation(annotation, globalns)\n"}
+,{"stream_name":"stdout","time":7842.472663423,"data":"PATCH_END fastapi_5077\n"}
+,{"stream_name":"stdout","time":7842.472665494,"data":"[34/36] Evaluating fastapi_14986 (fastapi/fastapi)...\n"}
+,{"stream_name":"stderr","time":7964.766414842,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3def16f8-85d, creating venv without pip: Command '['/tmp/swegemma_sandbox_3def16f8-85d_ys2ty1_j/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7964.766446822,"data":"\n"}
+,{"stream_name":"stderr","time":7964.766450916,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 3def16f8-85d, creating venv without pip: Command '['/tmp/swegemma_sandbox_3def16f8-85d_ys2ty1_j/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7968.117907398,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 45dae668-8c8, creating venv without pip: Command '['/tmp/swegemma_sandbox_45dae668-8c8_50paf375/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":7968.117941207,"data":"\n"}
+,{"stream_name":"stderr","time":7968.117945008,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 45dae668-8c8, creating venv without pip: Command '['/tmp/swegemma_sandbox_45dae668-8c8_50paf375/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":7968.191444899,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=1190, tool_calls=16, duration=125.6s\n"}
+,{"stream_name":"stdout","time":7968.191475217,"data":"TRACE_BEGIN fastapi_14986\n"}
+,{"stream_name":"stdout","time":7968.191480101,"data":"TRACE_END fastapi_14986\n"}
+,{"stream_name":"stdout","time":7968.191484091,"data":"PATCH_BEGIN fastapi_14986\n"}
+,{"stream_name":"stdout","time":7968.191487975,"data":"diff --git a/fastapi/applications.py b/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":7968.191492723,"data":"index ed05a1ff..2b5068de 100644\n"}
+,{"stream_name":"stdout","time":7968.191496445,"data":"--- a/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":7968.191500526,"data":"+++ b/fastapi/applications.py\n"}
+,{"stream_name":"stdout","time":7968.191503153,"data":"@@ -679,7 +679,7 @@ class FastAPI(Starlette):\n"}
+,{"stream_name":"stdout","time":7968.191505615,"data":"                 ```\n"}
+,{"stream_name":"stdout","time":7968.191508005,"data":"                 \"\"\"\n"}
+,{"stream_name":"stdout","time":7968.191510401,"data":"             ),\n"}
+,{"stream_name":"stdout","time":7968.191512735,"data":"-        ] = True,\n"}
+,{"stream_name":"stdout","time":7968.191515059,"data":"+        ] = False,\n"}
+,{"stream_name":"stdout","time":7968.191517319,"data":"         responses: Annotated[\n"}
+,{"stream_name":"stdout","time":7968.191519696,"data":"             dict[int | str, dict[str, Any]] | None,\n"}
+,{"stream_name":"stdout","time":7968.19152204,"data":"             Doc(\n"}
+,{"stream_name":"stdout","time":7968.191524337,"data":"diff --git a/fastapi/openapi/docs.py b/fastapi/openapi/docs.py\n"}
+,{"stream_name":"stdout","time":7968.191526754,"data":"index b845f87c..92acff08 100644\n"}
+,{"stream_name":"stdout","time":7968.191529062,"data":"--- a/fastapi/openapi/docs.py\n"}
+,{"stream_name":"stdout","time":7968.191531381,"data":"+++ b/fastapi/openapi/docs.py\n"}
+,{"stream_name":"stdout","time":7968.191533767,"data":"@@ -151,14 +151,14 @@ def get_swagger_ui_html(\n"}
+,{"stream_name":"stdout","time":7968.191536118,"data":"     \u003c!-- `SwaggerUIBundle` is now available on the page --\u003e\n"}
+,{"stream_name":"stdout","time":7968.191548395,"data":"     \u003cscript\u003e\n"}
+,{"stream_name":"stdout","time":7968.191550487,"data":"     const ui = SwaggerUIBundle({{\n"}
+,{"stream_name":"stdout","time":7968.191552412,"data":"-        url: '{openapi_url}',\n"}
+,{"stream_name":"stdout","time":7968.191554269,"data":"+        url: {json.dumps(openapi_url)},\n"}
+,{"stream_name":"stdout","time":7968.191556159,"data":"     \"\"\"\n"}
+,{"stream_name":"stdout","time":7968.191557952,"data":" \n"}
+,{"stream_name":"stdout","time":7968.19155974,"data":"     for key, value in current_swagger_ui_parameters.items():\n"}
+,{"stream_name":"stdout","time":7968.191561577,"data":"         html += f\"{json.dumps(key)}: {json.dumps(jsonable_encoder(value))},\\n\"\n"}
+,{"stream_name":"stdout","time":7968.191563636,"data":" \n"}
+,{"stream_name":"stdout","time":7968.191565293,"data":"     if oauth2_redirect_url:\n"}
+,{"stream_name":"stdout","time":7968.191567182,"data":"-        html += f\"oauth2RedirectUrl: window.location.origin + '{oauth2_redirect_url}',\"\n"}
+,{"stream_name":"stdout","time":7968.191569205,"data":"+        html += f\"oauth2RedirectUrl: window.location.origin + {json.dumps(oauth2_redirect_url)},\"\n"}
+,{"stream_name":"stdout","time":7968.191571219,"data":" \n"}
+,{"stream_name":"stdout","time":7968.191572922,"data":"     html += \"\"\"\n"}
+,{"stream_name":"stdout","time":7968.191574802,"data":"     presets: [\n"}
+,{"stream_name":"stdout","time":7968.191576516,"data":"PATCH_END fastapi_14986\n"}
+,{"stream_name":"stdout","time":7968.191578355,"data":"[35/36] Evaluating rich_3105 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":8164.940282731,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 5ae71dae-37b, creating venv without pip: Command '['/tmp/swegemma_sandbox_5ae71dae-37b_3wv011in/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":8164.940313677,"data":"\n"}
+,{"stream_name":"stderr","time":8164.940317903,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 5ae71dae-37b, creating venv without pip: Command '['/tmp/swegemma_sandbox_5ae71dae-37b_3wv011in/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":8167.445323591,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cd04aa92-362, creating venv without pip: Command '['/tmp/swegemma_sandbox_cd04aa92-362_wxdfimkn/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":8167.445350566,"data":"\n"}
+,{"stream_name":"stderr","time":8167.445354065,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox cd04aa92-362, creating venv without pip: Command '['/tmp/swegemma_sandbox_cd04aa92-362_wxdfimkn/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":8167.52063012,"data":"  -\u003e resolved=False, exit_code=1, patch_chars=0, tool_calls=23, duration=199.3s\n"}
+,{"stream_name":"stdout","time":8167.520652827,"data":"TRACE_BEGIN rich_3105\n"}
+,{"stream_name":"stdout","time":8167.520656246,"data":"TRACE_END rich_3105\n"}
+,{"stream_name":"stdout","time":8167.520658874,"data":"PATCH_BEGIN rich_3105\n"}
+,{"stream_name":"stdout","time":8167.520661352,"data":"\n"}
+,{"stream_name":"stdout","time":8167.520663691,"data":"PATCH_END rich_3105\n"}
+,{"stream_name":"stdout","time":8167.520666069,"data":"[36/36] Evaluating rich_3894 (Textualize/rich)...\n"}
+,{"stream_name":"stderr","time":8267.020688348,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 13252855-9d3, creating venv without pip: Command '['/tmp/swegemma_sandbox_13252855-9d3_vvbxdp1r/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":8267.020734297,"data":"\n"}
+,{"stream_name":"stderr","time":8267.020737851,"data":"WARNING:swegemma.sandbox.subprocess:ensurepip unavailable in sandbox 13252855-9d3, creating venv without pip: Command '['/tmp/swegemma_sandbox_13252855-9d3_vvbxdp1r/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":8269.394905154,"data":"  -\u003e resolved=True, exit_code=0, patch_chars=594, tool_calls=8, duration=102.0s\n"}
+,{"stream_name":"stdout","time":8269.394928884,"data":"TRACE_BEGIN rich_3894\n"}
+,{"stream_name":"stdout","time":8269.39493227,"data":"TRACE_END rich_3894\n"}
+,{"stream_name":"stdout","time":8269.394934897,"data":"PATCH_BEGIN rich_3894\n"}
+,{"stream_name":"stdout","time":8269.394937559,"data":"diff --git a/rich/_inspect.py b/rich/_inspect.py\n"}
+,{"stream_name":"stdout","time":8269.394940152,"data":"index 27d65cec..05d5eecc 100644\n"}
+,{"stream_name":"stdout","time":8269.394942468,"data":"--- a/rich/_inspect.py\n"}
+,{"stream_name":"stdout","time":8269.39494543,"data":"+++ b/rich/_inspect.py\n"}
+,{"stream_name":"stdout","time":8269.394947947,"data":"@@ -101,6 +101,10 @@ class Inspect(JupyterMixin):\n"}
+,{"stream_name":"stdout","time":8269.394950344,"data":"         signature_text = self.highlighter(_signature)\n"}
+,{"stream_name":"stdout","time":8269.394952748,"data":" \n"}
+,{"stream_name":"stdout","time":8269.394955107,"data":"         qualname = name or getattr(obj, \"__qualname__\", name)\n"}
+,{"stream_name":"stdout","time":8269.394957724,"data":"+        if not isinstance(qualname, str):\n"}
+,{"stream_name":"stdout","time":8269.394960103,"data":"+            qualname = getattr(obj, \"__name__\", name)\n"}
+,{"stream_name":"stdout","time":8269.394962568,"data":"+            if not isinstance(qualname, str):\n"}
+,{"stream_name":"stdout","time":8269.394964998,"data":"+                qualname = name\n"}
+,{"stream_name":"stdout","time":8269.394967564,"data":" \n"}
+,{"stream_name":"stdout","time":8269.394969854,"data":"         # If obj is a module, there may be classes (which are callable) to display\n"}
+,{"stream_name":"stdout","time":8269.394972516,"data":"         if inspect.isclass(obj):\n"}
+,{"stream_name":"stdout","time":8269.394974906,"data":"PATCH_END rich_3894\n"}
+,{"stream_name":"stdout","time":8275.47982652,"data":"Created /kaggle/working/submission.zip (0.00 MiB)\n"}
+,{"stream_name":"stderr","time":8281.031346799,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8281.031372722,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8281.1939123,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8281.193936864,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8281.904578332,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8282.335421187,"data":"[NbConvertApp] Writing 1737848 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8285.017730611,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8285.904978195,"data":"[NbConvertApp] Writing 1425249 bytes to __results__.html\n"}
+]
