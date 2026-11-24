@@ -1,6 +1,6 @@
 # Handoff: Gemma 4 Developer Agent competition
 
-State on 2026-11-22 22:30 UTC. Read this first when continuing in a new session.
+State on 2026-11-24 03:15 UTC. Read this first when continuing in a new session.
 
 ## Where things stand
 
@@ -8,7 +8,7 @@ State on 2026-11-22 22:30 UTC. Read this first when continuing in a new session.
   Final deadline 2026-12-02 23:59 UTC. One submission per day; none while another is scoring (about a day).
 - Leaderboard results: `experiments/leaderboard/README.md`.
   - v3 (temperature 0.2, 5 min, 30 calls): **0.13** (8 of 58). Top of the board is 0.24.
-  - v4 (v3 with temperature 1.0, top_k 64), submission 58739856: **pending** since 2026-11-22 20:04 UTC.
+  - v4 (v3 with temperature 1.0, top_k 64), submission 58739856: **0.12** (7 of 58).
 - `submission/` holds v4. `experiments/v3_submitted/` is what scored 0.13.
   `experiments/v5_candidate/` is the next idea (plan-first prompt, tool-call fixes): validated, never run.
 - Kaggle GPU quota (30 h a week) was used up on 2026-11-21. No local evaluation is possible until it resets.
@@ -28,7 +28,7 @@ State on 2026-11-22 22:30 UTC. Read this first when continuing in a new session.
 
 ## Open decision
 
-If v4 also lands near 0.13: submit the published 0.24 files (`research/competitor_repositories/idris_v24/v24/`)
+v4 also landed low (0.12). Recommended next (candidate built in `experiments/v6_reference_idris_6min/`): submit the published 0.24 files (`research/competitor_repositories/idris_v24/v24/`)
 with only the time cap shortened, as a reference point, before trying v5.
 
 ## How to do things
